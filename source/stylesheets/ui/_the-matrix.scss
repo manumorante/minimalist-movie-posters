@@ -1,0 +1,91 @@
+// The Matrix
+
+$color: #32b050;
+$color2: #000;
+
+// columns
+$cols-total:        8;
+$canvas-width:  300px;
+$canvas-height: 430px;
+$col-width:      12px;
+$col-margin:     41px;
+
+$speed: 1.5s;
+$debug: false;
+
+body.the-matrix {
+  perspective: 1000px;
+  perspective-origin: 50% 25%;
+}
+
+.the-matrix .poster{
+  overflow: hidden;
+  background-color: $color2;
+  color: #000;
+
+  h1,
+  h4 {
+    position: absolute;
+    right: 0;
+    bottom: 51px;
+    left: 0;
+    font-size: 33px;
+    text-align: center;
+  }
+
+  h1{
+    bottom: 51px;
+    font-size: 33px;
+    letter-spacing: 1px;
+    color: $color;
+  }
+
+  h4{
+    bottom: 34px;
+    font-size: 13px;
+    font-weight: normal;
+    color: $color;
+  }
+
+  .canvas{
+    position: relative;
+    width: $canvas-width;
+    height: $canvas-height;
+    margin: 105px auto 0;
+  }
+
+  .col{
+    position: absolute;
+    top: 0;
+    width: $col-width;
+    height: 100%;
+    background-color: $color;
+    z-index: 1;
+
+    &::after{
+      position: absolute;
+      left: 0;
+      content:'';
+
+      display: block;
+      width: $col-width;
+      height: $col-width;
+      background-color: $color2;
+    }
+  }
+
+  @for $i from 0 through $cols-total {
+    .col:nth-child(#{$i+1}){
+      left: $col-margin * $i;
+
+      &:after{
+        @if ($i % 2 == 0){
+          @keyframes text#{$i} { from{ top: -$col-width; } to{ top: 100%; } }
+          animation: text#{$i} #{(($i+1)*+100) + 1500}ms linear infinite;
+        } @else {
+          display: none;
+        }
+      }
+    }
+  }
+}

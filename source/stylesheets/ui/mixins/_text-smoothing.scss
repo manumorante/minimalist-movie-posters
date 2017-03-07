@@ -1,0 +1,19 @@
+// Text-smoothing
+@mixin text-smoothing($active: true) {
+  &,
+  *,
+  *::after,
+  *::before {
+    @if $active {
+      text-rendering: optimizeLegibility;
+      -webkit-text-stroke: 0;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    } @else {
+      text-rendering: auto;
+      -webkit-text-stroke: initial;
+      -webkit-font-smoothing: subpixel-antialiased;
+      -moz-osx-font-smoothing: auto;
+    }
+  }
+}

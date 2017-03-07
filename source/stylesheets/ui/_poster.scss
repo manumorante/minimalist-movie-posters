@@ -1,0 +1,13 @@
+// Poster
+
+.poster{
+  @include absolute-center($poster-width, $poster-height);
+  background-size: $poster-width auto;
+}
+
+@if ($debug) {
+  // Show 3D Cube (debug)
+  .cube {
+    @include cube3d(200px, true);
+  }
+}

@@ -1,0 +1,23 @@
+$debug: false;
+
+$poster-width:  500px !default;
+$poster-height: 760px !default;
+
+html,
+body,
+.wrapper{
+  width: 100%;
+  height: 100%;
+}
+
+body{
+  overflow: hidden;
+  font-family: Arial;
+  @include text-smoothing;
+  background-color: #222;
+  color: #ffffff;
+}
+
+a {
+  color: #ffffff;
+}
