@@ -1,2 +1,1 @@
-# minimal-posters
-minimal-posters
+# Minimalist Movie Posters
