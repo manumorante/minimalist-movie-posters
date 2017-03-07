@@ -5,10 +5,11 @@ $color2: #000;
 
 // columns
 $cols-total:        8;
-$canvas-width:  300px;
-$canvas-height: 430px;
-$col-width:      12px;
-$col-margin:     41px;
+$canvas-width: 60%; // 300px;
+$canvas-height: 60%; // 430px;
+$col-width: 5%;
+$col-margin: 13.5%;
+$margin-top: 20%; // 105px
 
 $speed: 1.5s;
 $debug: false;
@@ -51,7 +52,7 @@ body.the-matrix {
     position: relative;
     width: $canvas-width;
     height: $canvas-height;
-    margin: 105px auto 0;
+    margin: $margin-top auto 0;
   }
 
   .col{
@@ -68,7 +69,7 @@ body.the-matrix {
       content:'';
 
       display: block;
-      width: $col-width;
+      width: 100%;
       height: $col-width;
       background-color: $color2;
     }

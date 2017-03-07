@@ -1,9 +1,25 @@
 // Poster
 
-.poster{
-  @include absolute-center($poster-width, $poster-height);
-  background-size: $poster-width auto;
+.poster {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  @include at-small {
+    @include absolute-center($poster-width, $poster-height);
+  }
 }
+
+@if ($debug) {
+  // Show 3D Cube (debug)
+  .cube {
+    @include cube3d(200px, true);
+  }
+}
+
 
 @if ($debug) {
   // Show 3D Cube (debug)

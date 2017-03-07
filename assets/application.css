@@ -5,6 +5,8 @@ body,
   height: 100%; }
 
 body {
+  margin: 0;
+  padding: 0;
   overflow: hidden;
   font-family: Arial;
   background-color: #222;
@@ -23,15 +25,21 @@ a {
 
 .poster {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  right: inherit;
-  bottom: inherit;
-  width: 500px;
-  height: 760px;
-  margin-top: -380px;
-  margin-left: -250px;
-  background-size: 500px auto; }
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+  @media (min-width: 768px) {
+    .poster {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      right: inherit;
+      bottom: inherit;
+      width: 500px;
+      height: 760px;
+      margin-top: -380px;
+      margin-left: -250px; } }
 
 body.forrest-gump {
   background-color: #222;
@@ -153,13 +161,13 @@ body.the-matrix {
     color: #32b050; }
   .the-matrix .poster .canvas {
     position: relative;
-    width: 300px;
-    height: 430px;
-    margin: 105px auto 0; }
+    width: 60%;
+    height: 60%;
+    margin: 20% auto 0; }
   .the-matrix .poster .col {
     position: absolute;
     top: 0;
-    width: 12px;
+    width: 5%;
     height: 100%;
     background-color: #32b050;
     z-index: 1; }
@@ -168,72 +176,72 @@ body.the-matrix {
       left: 0;
       content: '';
       display: block;
-      width: 12px;
-      height: 12px;
+      width: 100%;
+      height: 5%;
       background-color: #000; }
   .the-matrix .poster .col:nth-child(1) {
-    left: 0px; }
+    left: 0%; }
     .the-matrix .poster .col:nth-child(1):after {
       animation: text0 1600ms linear infinite; }
 
 @keyframes text0 {
   from {
-    top: -12px; }
+    top: -5%; }
   to {
     top: 100%; } }
   .the-matrix .poster .col:nth-child(2) {
-    left: 41px; }
+    left: 13.5%; }
     .the-matrix .poster .col:nth-child(2):after {
       display: none; }
   .the-matrix .poster .col:nth-child(3) {
-    left: 82px; }
+    left: 27%; }
     .the-matrix .poster .col:nth-child(3):after {
       animation: text2 1800ms linear infinite; }
 
 @keyframes text2 {
   from {
-    top: -12px; }
+    top: -5%; }
   to {
     top: 100%; } }
   .the-matrix .poster .col:nth-child(4) {
-    left: 123px; }
+    left: 40.5%; }
     .the-matrix .poster .col:nth-child(4):after {
       display: none; }
   .the-matrix .poster .col:nth-child(5) {
-    left: 164px; }
+    left: 54%; }
     .the-matrix .poster .col:nth-child(5):after {
       animation: text4 2000ms linear infinite; }
 
 @keyframes text4 {
   from {
-    top: -12px; }
+    top: -5%; }
   to {
     top: 100%; } }
   .the-matrix .poster .col:nth-child(6) {
-    left: 205px; }
+    left: 67.5%; }
     .the-matrix .poster .col:nth-child(6):after {
       display: none; }
   .the-matrix .poster .col:nth-child(7) {
-    left: 246px; }
+    left: 81%; }
     .the-matrix .poster .col:nth-child(7):after {
       animation: text6 2200ms linear infinite; }
 
 @keyframes text6 {
   from {
-    top: -12px; }
+    top: -5%; }
   to {
     top: 100%; } }
   .the-matrix .poster .col:nth-child(8) {
-    left: 287px; }
+    left: 94.5%; }
     .the-matrix .poster .col:nth-child(8):after {
       display: none; }
   .the-matrix .poster .col:nth-child(9) {
-    left: 328px; }
+    left: 108%; }
     .the-matrix .poster .col:nth-child(9):after {
       animation: text8 2400ms linear infinite; }
 
 @keyframes text8 {
   from {
-    top: -12px; }
+    top: -5%; }
   to {
     top: 100%; } }
