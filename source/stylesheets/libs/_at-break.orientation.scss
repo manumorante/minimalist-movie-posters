@@ -1,0 +1,47 @@
+// Mobile Devices Orientation
+
+// Reference https://css-tricks.com/snippets/css/media-queries-for-standard-devices/
+
+@mixin at-mobile ($orientation: portrait) {
+  @media only screen
+  and (min-device-width: 320px) // iPhone 4 Portrait
+  and (max-device-width: 736px) // iPhone 6+ Landscape
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: $orientation) {
+    @content;
+  }
+}
+
+@mixin at-tablet ($orientation: portrait) {
+  @media only screen
+  and (min-device-width: 768px) // iPad mini Portrait
+  and (max-device-width: 1024px) // iPad Landscape
+  and (-webkit-min-device-pixel-ratio: 1) // Use 2 to support +iPad 3
+  and (orientation: $orientation) {
+    @content;
+  }
+}
+
+@mixin at-portrait {
+  @include at-mobile {
+    @content;
+  }
+}
+
+@mixin at-landscape {
+  @include at-mobile (landscape) {
+    @content;
+  }
+}
+
+@mixin at-tablet-portrait {
+  @include at-tablet {
+    @content;
+  }
+}
+
+@mixin at-tablet-landscape {
+  @include at-tablet (landscape) {
+    @content;
+  }
+}

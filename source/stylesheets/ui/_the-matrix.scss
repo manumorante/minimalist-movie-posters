@@ -4,12 +4,15 @@ $color: #32b050;
 $color2: #000;
 
 // columns
-$cols-total:        8;
-$canvas-width: 60%; // 300px;
-$canvas-height: 60%; // 430px;
+$cols-total: 8;
+$canvas-width: 60%;
+// 300px;
+$canvas-height: 60%;
+// 430px;
 $col-width: 5%;
 $col-margin: 13.5%;
-$margin-top: 20%; // 105px
+$margin-top: 20%;
+// 105px
 
 $speed: 1.5s;
 $debug: false;
@@ -19,43 +22,56 @@ body.the-matrix {
   perspective-origin: 50% 25%;
 }
 
-.the-matrix .poster{
+.the-matrix .poster {
   overflow: hidden;
   background-color: $color2;
   color: #000;
 
-  h1,
-  h4 {
+  .title,
+  .subtitle {
     position: absolute;
     right: 0;
-    bottom: 51px;
     left: 0;
-    font-size: 33px;
+    z-index: 2;
+
     text-align: center;
+    color: $color;
+
+    // Do not show titles on mobile in landscape orientation
+    @include at-landscape {
+      display: none;
+    }
   }
 
-  h1{
+  .title {
     bottom: 51px;
+    margin: 22px 0;
+
     font-size: 33px;
+    font-weight: bold;
     letter-spacing: 1px;
-    color: $color;
   }
 
-  h4{
+  .subtitle {
     bottom: 34px;
+    margin: 17px 0;
+
     font-size: 13px;
-    font-weight: normal;
-    color: $color;
   }
 
-  .canvas{
+  .canvas {
     position: relative;
     width: $canvas-width;
     height: $canvas-height;
     margin: $margin-top auto 0;
+
+    // Vertical center for mobile in landscape
+    @include at-landscape {
+      margin-top: 12%;
+    }
   }
 
-  .col{
+  .col {
     position: absolute;
     top: 0;
     width: $col-width;
@@ -63,10 +79,10 @@ body.the-matrix {
     background-color: $color;
     z-index: 1;
 
-    &::after{
+    &::after {
       position: absolute;
       left: 0;
-      content:'';
+      content: '';
 
       display: block;
       width: 100%;
@@ -76,12 +92,19 @@ body.the-matrix {
   }
 
   @for $i from 0 through $cols-total {
-    .col:nth-child(#{$i+1}){
+    .col:nth-child(#{$i+1}) {
       left: $col-margin * $i;
 
-      &:after{
-        @if ($i % 2 == 0){
-          @keyframes text#{$i} { from{ top: -$col-width; } to{ top: 100%; } }
+      &:after {
+        @if ($i % 2 == 0) {
+          @keyframes text#{$i} {
+            from {
+              top: -$col-width;
+            }
+            to {
+              top: 100%;
+            }
+          }
           animation: text#{$i} #{(($i+1)*+100) + 1500}ms linear infinite;
         } @else {
           display: none;
