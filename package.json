@@ -1,7 +1,7 @@
 {
-  "name": "static-boosted",
+  "name": "minimalist-movie-posters",
   "version": "0.0.1",
-  "description": "Boilerplate to static sites with Webpack, React and Bootstrap",
+  "description": "Collecton of movie posters created and animated with CSS",
   "main": "entry.js",
   "scripts": {
     "watch": "webpack --progress --colors --watch",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/manumorante/static-boosted.git"
+    "url": "git+https://github.com/manumorante/minimalist-movie-posters.git"
   },
-  "author": "",
+  "author": "Manu Morante",
   "license": "UNLICENSED",
   "bugs": {
-    "url": "https://github.com/manumorante/static-boosted/issues"
+    "url": "https://github.com/manumorante/minimalist-movie-posters/issues"
   },
-  "homepage": "https://github.com/manumorante/static-boosted#readme",
+  "homepage": "http://manumorante.com/minimalist-movie-posters",
   "devDependencies": {
     "babel-core": "^6.21.0",
     "babel-loader": "^6.2.10",
@@ -27,6 +27,7 @@
     "extract-text-webpack-plugin": "^1.0.1",
     "node-sass": "^4.1.1",
     "sass-loader": "^4.1.1",
+    "sass.at-break": "^1.5.0",
     "style-loader": "^0.13.1",
     "webpack": "^1.14.0",
     "webpack-dev-server": "^1.16.2"
