@@ -6,7 +6,7 @@ import TheMatrix from './pages/TheMatrix'
 function App() {
   return (
     <BrowserRouter>
-      <div className='w-screen h-screen flex items-center justify-center p-3'>
+      <div className='Stage w-screen h-screen flex items-center justify-center p-3'>
         <nav className='fixed top-0 flex gap-3'>
           <Link to='forrest-gump'>Forrest Gump</Link>
           <Link to='/the-matrix'>The Matrix</Link>

@@ -1,12 +1,19 @@
-.forrest-gump {
+:root {
+  --wrapper-bg-color: #63a0ba;
+  --wrapper-text-color: #fff;
+  --poster-bg-color: #77b1c9;
+  --poster-color-1: #fff;
+}
+
+.poster {
   perspective: 800px;
   perspective-origin: 50% 25%;
   background-color: #77b1c9;
   color: white;
 }
 
-.forrest-gump h1,
-.forrest-gump h4 {
+.poster h1,
+.poster h4 {
   position: absolute;
   right: 0;
   bottom: 51px;
@@ -15,13 +22,13 @@
   text-align: center;
 }
 
-.forrest-gump h1 {
+.poster h1 {
   bottom: 51px;
   font-size: 33px;
   letter-spacing: 1px;
 }
 
-.forrest-gump h4 {
+.poster h4 {
   bottom: 34px;
   font-size: 13px;
   font-weight: normal;
@@ -36,7 +43,7 @@
   }
 }
 
-.forrest-gump .park-bench {
+.poster .park-bench {
   position: absolute;
   top: 333px;
   left: 135px;
@@ -46,7 +53,7 @@
   animation: spin 15s infinite ease-in-out alternate;
 }
 
-.forrest-gump .park-bench {
+.poster .park-bench {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -57,52 +64,52 @@
   transform-style: preserve-3d;
 }
 
-.forrest-gump .plank {
+.poster .plank {
   position: absolute;
   width: 100%;
   height: 12px;
   background-color: #fff;
 }
 
-.forrest-gump .plank-1 {
+.poster .plank-1 {
   transform: rotateX(-180deg) translateZ(0) translateY(-132px);
 }
 
-.forrest-gump .plank-2 {
+.poster .plank-2 {
   transform: rotateX(-180deg) translateZ(0) translateY(-146px);
 }
 
-.forrest-gump .plank-3 {
+.poster .plank-3 {
   transform: rotateX(-180deg) translateZ(0) translateY(-160px);
 }
 
-.forrest-gump .plank-4 {
+.poster .plank-4 {
   height: 46px;
   transform: rotateX(-90deg) translateZ(160px) translateY(0) translateY(-29px);
 }
 
-.forrest-gump .leg {
+.poster .leg {
   position: absolute;
   width: 11px;
   height: 105px;
   background-color: #fff;
 }
 
-.forrest-gump .leg-1 {
+.poster .leg-1 {
   transform: rotateX(-180deg) translateZ(0) translateY(-122px) translateX(25px);
 }
 
-.forrest-gump .leg-2 {
+.poster .leg-2 {
   transform: rotateX(-180deg) translateZ(0) translateY(-122px) translateX(191px);
 }
 
-.forrest-gump .leg-3 {
+.poster .leg-3 {
   height: 45px;
   transform: rotateX(-180deg) translateZ(-50px) translateY(-182px)
     translateX(25px);
 }
 
-.forrest-gump .leg-4 {
+.poster .leg-4 {
   height: 45px;
   transform: rotateX(-180deg) translateZ(-50px) translateY(-182px)
     translateX(191px);

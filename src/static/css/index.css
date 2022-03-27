@@ -2,8 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+.Stage {
+  color: var(--wrapper-text-color);
+  background: var(--wrapper-bg-color);
+}
+
 .poster {
   width: 500px;
   height: 760px;
 }
-
