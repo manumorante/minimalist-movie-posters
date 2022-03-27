@@ -1,39 +1,22 @@
 {
-  "name": "minimalist-movie-posters",
-  "version": "0.0.1",
-  "description": "Collecton of movie posters created and animated with CSS",
-  "main": "entry.js",
+  "name": "swapper",
+  "version": "0.0.0",
   "scripts": {
-    "watch": "webpack --progress --colors --watch",
-    "build": "webpack --progress --colors"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/manumorante/minimalist-movie-posters.git"
-  },
-  "author": "Manu Morante",
-  "license": "UNLICENSED",
-  "bugs": {
-    "url": "https://github.com/manumorante/minimalist-movie-posters/issues"
-  },
-  "homepage": "http://manumorante.com/minimalist-movie-posters",
-  "devDependencies": {
-    "babel-core": "^6.21.0",
-    "babel-loader": "^6.2.10",
-    "babel-polyfill": "^6.20.0",
-    "babel-preset-es2015": "^6.18.0",
-    "babel-preset-react": "^6.16.0",
-    "css-loader": "^0.26.1",
-    "extract-text-webpack-plugin": "^1.0.1",
-    "node-sass": "^4.1.1",
-    "sass-loader": "^4.1.1",
-    "sass.at-break": "^1.5.0",
-    "style-loader": "^0.13.1",
-    "webpack": "^1.14.0",
-    "webpack-dev-server": "^1.16.2"
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
   },
   "dependencies": {
-    "react": "^15.4.1",
-    "react-dom": "^15.4.1"
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0",
+    "react-router-dom": "^6.2.2",
+    "tailwindcss": "^3.0.23"
+  },
+  "devDependencies": {
+    "@tailwindcss/jit": "^0.1.18",
+    "@vitejs/plugin-react-refresh": "^1.3.1",
+    "autoprefixer": "^10.3.4",
+    "postcss": "^8.3.6",
+    "vite": "^2.5.4"
   }
 }
