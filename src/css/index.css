@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.PosterLayout {
+  color: var(--wrapper-text-color, #fff);
+  background: var(--wrapper-bg-color, #000);
+}
+
+.Nav {
+  color: var(--poster-text-color, #fff);
+  background: var(--poster-bg-color, #000);
+}

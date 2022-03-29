@@ -1,17 +1,14 @@
-<p align="center">
-  <h1>Vite + React + TailwindCss + JIT</h1>
-</p>
+# Minimalist Movie Posters
 
-<p>
-<img src="https://img.shields.io/github/stars/vivekascoder/vite-react-tailwind-jit?style=for-the-badge">
-<img src="https://img.shields.io/github/forks/vivekascoder/vite-react-tailwind-jit?style=for-the-badge">
-</p>
+http://manumorante.com/minimalist-movie-posters/
 
-This template allows you to quickly scaffold a React project with React Router, TailwindCss with JIT Compiler and vite as a bundler. We use Vite because it's much faster than webpack. We use tailwindcss JIT compiler because it makes tailwindcss build time negligible and offers more features that you can check here [Tailwind JIT](https://tailwindcss.com/docs/just-in-time-mode). Talking about Vite, you can find more information here [Vite](https://vitejs.dev/).
+---
 
-## How to Install.
-First of all make sure you have yarn installed. If you have it you can create a new repo with this template and can clone it.
+CSS and animation by Manu Morante
 
-![Use this template](https://i.imgur.com/Gtt5CPx.png)
+Poster design by Eder Rengifo
 
-After clonning it, you can simply go to the folder and type `yarn` to install the dependencies.
+# TODOs
+
+- [x] Move html to React component
+- [ ] Create a Poster component
