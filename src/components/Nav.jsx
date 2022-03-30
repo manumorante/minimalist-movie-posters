@@ -9,6 +9,7 @@ export default function Nav() {
       <Link to='/kill-bill'>Kill Bill</Link>
       <Link to='/star-wars'>Star Wars</Link>
       <Link to='/up'>Up</Link>
+      <Link to='/titanic'>Titanic</Link>
     </nav>
   )
 }

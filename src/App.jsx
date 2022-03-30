@@ -6,6 +6,7 @@ import TheMatrix from './posters/TheMatrix'
 import KillBill from './posters/KillBill'
 import StarWars from './posters/StarWars'
 import Up from './posters/Up'
+import Titanic from './posters/Titanic'
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
           <Route path='the-matrix' element={<TheMatrix />} />
           <Route path='kill-bill' element={<KillBill />} />
           <Route path='star-wars' element={<StarWars />} />
+          <Route path='titanic' element={<Titanic />} />
           <Route path='up' element={<Up />} />
         </Route>
       </Routes>

@@ -1,0 +1,69 @@
+.titanic {
+  & {
+    position: relative;
+    font-weight: 600;
+    color: var(--text);
+    background-color: var(--bg);
+  }
+
+  h1 {
+    position: absolute;
+    right: 0;
+    bottom: 125px;
+    left: 0;
+    font-size: 32px;
+    text-align: center;
+    letter-spacing: 0;
+  }
+
+  .iceberg {
+    position: absolute;
+    top: 153px;
+    left: 145px;
+    width: 214px;
+    height: 283px;
+
+    .top {
+      fill: white;
+    }
+
+    .underwater {
+      fill: rgba(255, 255, 255, 0.5);
+      animation: water 2s infinite alternate;
+    }
+  }
+
+  .ship {
+    position: absolute;
+    bottom: 524px;
+    left: 270px;
+    width: 36px;
+    height: 0;
+    fill: #354463;
+    animation: bye 34s;
+  }
+
+  @keyframes bye {
+    0% {
+      height: 12px;
+    }
+  }
+
+  @keyframes water {
+    0% {
+      fill: #ffffff80;
+    }
+    49% {
+      fill: #ffffff80;
+    }
+    50% {
+      fill: #ffffff66;
+    }
+    60% {
+      fill: #ffffff80;
+    }
+    100% {
+      fill: #ffffff80;
+    }
+  }
+}
