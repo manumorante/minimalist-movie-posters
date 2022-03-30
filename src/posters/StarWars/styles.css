@@ -1,0 +1,102 @@
+.star-wars {
+  & {
+    position: relative;
+    background-color: var(--bg);
+    color: var(--text);
+  }
+
+  h1,
+  h4 {
+    position: absolute;
+    right: 0;
+    bottom: 51px;
+    left: 0;
+    font-size: 33px;
+    text-align: center;
+  }
+
+  h1 {
+    bottom: 51px;
+    font-size: 33px;
+    letter-spacing: 1px;
+  }
+
+  h4 {
+    bottom: 34px;
+    font-size: 13px;
+    font-weight: normal;
+  }
+
+  @keyframes spin {
+    from {
+      transform: rotateY(45deg);
+    }
+    to {
+      transform: rotateY(-45deg);
+    }
+  }
+
+  .cube {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 220px;
+    height: 220px;
+    margin-left: -110px;
+    margin-top: -110px;
+    transform-style: preserve-3d;
+    animation: spin 15s infinite ease-in-out alternate;
+  }
+
+  .cube .death-ray {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 54px;
+    height: 54px;
+    background-color: var(--bg);
+    border-radius: 100%;
+    transform: translateX(85px) translateZ(80px) translateY(41px) rotateX(5deg);
+  }
+
+  .space-ship {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: inherit;
+    bottom: inherit;
+    width: 220px;
+    height: 220px;
+    margin-top: -110px;
+    margin-left: -110px;
+    background-color: var(--text);
+    border-radius: 100%;
+  }
+
+  .space-ship:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: inherit;
+    bottom: inherit;
+    width: 220px;
+    height: 6px;
+    margin-top: -3px;
+    margin-left: -110px;
+    display: block;
+    content: '';
+    background-color: var(--bg);
+  }
+
+  @keyframes reveal-border {
+    0% {
+      border-color: transparent;
+    }
+    50% {
+      border-color: var(--text);
+    }
+    100% {
+      border-color: transparent;
+    }
+  }
+}

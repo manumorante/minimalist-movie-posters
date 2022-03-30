@@ -7,6 +7,7 @@ export default function Nav() {
       <Link to='/forrest-gump'>Forrest Gump</Link>
       <Link to='/the-matrix'>The Matrix</Link>
       <Link to='/kill-bill'>Kill Bill</Link>
+      <Link to='/star-wars'>Star Wars</Link>
     </nav>
   )
 }
