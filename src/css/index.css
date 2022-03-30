@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  background-color: #000;
+}
+
 .PosterLayout {
   color: var(--text, #fff);
   background: var(--bg-dark, #000);

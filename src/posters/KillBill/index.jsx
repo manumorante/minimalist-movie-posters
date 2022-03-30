@@ -2,7 +2,7 @@ import React from 'react'
 import css from './styles.css'
 
 export default function KillBill() {
-  document.documentElement.style.setProperty('--bg-dark', '#bf9903')
+  document.documentElement.style.setProperty('--bg-dark', '#fac800aa')
   document.documentElement.style.setProperty('--bg', '#fac800')
   document.documentElement.style.setProperty('--text', '#000')
 

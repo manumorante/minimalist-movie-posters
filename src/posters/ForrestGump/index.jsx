@@ -2,7 +2,7 @@ import React from 'react'
 import css from './styles.css'
 
 export default function ForrestGump() {
-  document.documentElement.style.setProperty('--bg-dark', '#367894')
+  document.documentElement.style.setProperty('--bg-dark', '#77b1c9aa')
   document.documentElement.style.setProperty('--bg', '#77b1c9')
   document.documentElement.style.setProperty('--text', '#fff')
 
