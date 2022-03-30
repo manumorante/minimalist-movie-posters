@@ -10,20 +10,19 @@ export default function Titanic() {
     <>
       <h1>TITANIC</h1>
 
-      <svg className='iceberg'>
-        <polygon
-          className='top'
-          points='12,82.3 42,43.7 54.7,41.7 64.3,20.7 83.3,8.3 144.7,22 163,39 182.3,45.3 209.3,82.3'></polygon>
-        <polygon
-          className='underwater'
-          points='9.7,86.3 211.3,86.3 214.7,90 164.7,227.7 149.7,244.7 136.3,244.7 102.3,283.7 83.7,275 9.7,136.3 0,97.7'></polygon>
-      </svg>
+      <div className='scene'>
+        <svg className='iceberg' width='200' height='83'>
+          <polygon points='9,82 42,44 54,40 64,20 83,8 144.7,20 163,40 182,45 200,82' />
+        </svg>
 
-      <svg className='ship'>
-        <polygon
-          className='body'
-          points='28.7,9.4 30.8,3.2 32.9,3.8 30.9,10.2 35.4,12.1 3.7,12.1 3.6,11.1 0,2.7 5.2,4.2 6.1,1.5 8.1,1.9 7.3,4.8 10,5.7 11.1,3.8 13.1,2.8 14.5,1.5 17.2,3.3 20.3,3.3 20.8,5.9 22.2,7.3 24.2,0 26.1,0.5 24.2,8.1'></polygon>
-      </svg>
+        <svg className='underwater' width='200' height='194'>
+          <polygon points='9,0 210,0 200,04 164,142 150,158 136,158 100,194 83,190 9,50 0,11' />
+        </svg>
+
+        <svg className='transatlantic' width='80' height='24'>
+          <polygon points='56 16, 60 7, 64 8, 60 18, 76 24, 8 24, 6 21, 0 6, 9 9, 12 2, 16 3, 13 10, 18 12, 20 8, 24 6, 27 2, 39 6, 39 9, 43 12, 48 0, 52 2, 48 14, 56 17' />
+        </svg>
+      </div>
     </>
   )
 }

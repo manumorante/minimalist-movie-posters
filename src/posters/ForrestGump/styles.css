@@ -4,6 +4,9 @@
     perspective-origin: 50% 25%;
     background-color: var(--bg);
     color: var(--text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   h1,
@@ -38,24 +41,10 @@
   }
 
   .park-bench {
-    position: absolute;
-    top: 333px;
-    left: 135px;
     width: 230px;
     height: 230px;
     transform-style: preserve-3d;
     animation: spin 15s infinite ease-in-out alternate;
-  }
-
-  .park-bench {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 230px;
-    height: 230px;
-    margin-left: -115px;
-    margin-top: -115px;
-    transform-style: preserve-3d;
   }
 
   .plank {

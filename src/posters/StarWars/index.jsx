@@ -2,7 +2,7 @@ import React from 'react'
 import './styles.css'
 
 export default function StarWars() {
-  document.documentElement.style.setProperty('--bg-dark', '#111')
+  document.documentElement.style.setProperty('--bg-dark', '#222')
   document.documentElement.style.setProperty('--bg', '#000')
   document.documentElement.style.setProperty('--text', '#aaa')
 

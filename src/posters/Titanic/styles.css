@@ -1,6 +1,8 @@
 .titanic {
   & {
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-weight: 600;
     color: var(--text);
     background-color: var(--bg);
@@ -16,54 +18,35 @@
     letter-spacing: 0;
   }
 
-  .iceberg {
-    position: absolute;
-    top: 153px;
-    left: 145px;
-    width: 214px;
+  .scene {
+    position: relative;
+    width: 200px;
     height: 283px;
 
-    .top {
+    .iceberg {
       fill: white;
+      margin-bottom: 2px;
     }
 
     .underwater {
-      fill: rgba(255, 255, 255, 0.5);
-      animation: water 2s infinite alternate;
+      fill: #ffffff60;
     }
-  }
 
-  .ship {
-    position: absolute;
-    bottom: 524px;
-    left: 270px;
-    width: 36px;
-    height: 0;
-    fill: #354463;
-    animation: bye 34s;
+    .transatlantic {
+      position: absolute;
+      top: 84px;
+      left: 90px;
+      height: 0;
+      transform: translateY(-100%);
+      fill: #354463;
+      animation: bye 40s infinite;
+    }
   }
 
   @keyframes bye {
     0% {
-      height: 12px;
-    }
-  }
-
-  @keyframes water {
-    0% {
-      fill: #ffffff80;
-    }
-    49% {
-      fill: #ffffff80;
-    }
-    50% {
-      fill: #ffffff66;
-    }
-    60% {
-      fill: #ffffff80;
-    }
-    100% {
-      fill: #ffffff80;
+      left: 110px;
+      height: 24px;
     }
   }
 }

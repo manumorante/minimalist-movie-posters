@@ -8,7 +8,7 @@ export default function Poster() {
   return (
     <div className='PosterLayout w-screen h-screen flex items-center justify-center p-5 sm:p-0'>
       <div
-        className={`${cssName} poster w-full h-full sm:w-[500px] sm:h-[760px] transition-colors`}>
+        className={`${cssName} poster absolute top-16 right-6 bottom-6 left-6 sm:relative sm:w-[500px] sm:h-[760px] transition-colors`}>
         <Outlet />
       </div>
     </div>

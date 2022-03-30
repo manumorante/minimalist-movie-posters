@@ -4,7 +4,6 @@
 
 .kill-bill {
   & {
-    position: relative;
     overflow: hidden;
     background-color: var(--bg);
     color: var(--text);
@@ -17,7 +16,7 @@
     height: 100%;
     content: '';
     background-color: var(--blood);
-    animation: blood 5s;
+    animation: blood 5s infinite;
   }
 
   h1,
@@ -49,19 +48,7 @@
     width: 423px;
     height: 71px;
     transform: translateX(0%);
-    animation: kill 5s ease-in-out forwards;
-  }
-
-  @keyframes reveal-border {
-    0% {
-      border-color: transparent;
-    }
-    50% {
-      border-color: #fff;
-    }
-    100% {
-      border-color: transparent;
-    }
+    animation: kill 5s ease-in-out forwards infinite;
   }
 
   @keyframes kill {

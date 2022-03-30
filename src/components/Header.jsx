@@ -8,7 +8,7 @@ export default function Header() {
   }
 
   return (
-    <header className='Header fixed z-10 top-0 w-full p-4 cursor-pointer'>
+    <header className='Header fixed z-10 top-0 w-full p-3 cursor-pointer'>
       <div
         onClick={handleMenu}
         className='flex gap-2 items-center sm:justify-center'>
@@ -26,7 +26,10 @@ export default function Header() {
           />
         </svg>
 
-        <div className='title font-bold'>Minimalist Movie Posters</div>
+        <div className='title font-bold w-full text-center'>
+          Minimalist Movie Posters
+        </div>
+        <div className='w-6'></div>
       </div>
 
       <div className='Nav hidden sm:block mt-4'>

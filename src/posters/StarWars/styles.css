@@ -1,6 +1,5 @@
 .star-wars {
   & {
-    position: relative;
     background-color: var(--bg);
     color: var(--text);
   }
