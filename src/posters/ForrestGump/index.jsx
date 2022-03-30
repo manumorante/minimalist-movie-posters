@@ -1,11 +1,10 @@
 import React from 'react'
-import './styles.css'
+import css from './styles.css'
 
 export default function ForrestGump() {
-  document.documentElement.style.setProperty('--wrapper-bg-color', '#63a0ba')
-  document.documentElement.style.setProperty('--wrapper-text-color', '#fff')
-  document.documentElement.style.setProperty('--poster-bg-color', '#77b1c9')
-  document.documentElement.style.setProperty('--poster-text-color', '#fff')
+  document.documentElement.style.setProperty('--bg-dark', '#367894')
+  document.documentElement.style.setProperty('--bg', '#77b1c9')
+  document.documentElement.style.setProperty('--text', '#fff')
 
   return (
     <>
@@ -27,6 +26,7 @@ export default function ForrestGump() {
         <div className='side top'></div>
         <div className='side bottom'></div>
       </div>
+      <style type='text/css'>{css}</style>
     </>
   )
 }

@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 .PosterLayout {
-  color: var(--wrapper-text-color, #fff);
-  background: var(--wrapper-bg-color, #000);
+  color: var(--text, #fff);
+  background: var(--bg-dark, #000);
 }
 
 .Nav {
-  color: var(--poster-text-color, #fff);
-  background: var(--poster-bg-color, #000);
+  color: var(--text, #fff);
+  background: var(--bg, #000);
 }

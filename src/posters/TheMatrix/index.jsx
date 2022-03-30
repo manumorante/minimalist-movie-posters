@@ -1,11 +1,10 @@
 import React from 'react'
-import './styles.css'
+import css from './styles.css'
 
 export default function TheMatrix() {
-  document.documentElement.style.setProperty('--wrapper-bg-color', '#111')
-  document.documentElement.style.setProperty('--wrapper-text-color', '#2b8f42')
-  document.documentElement.style.setProperty('--poster-bg-color', '#000')
-  document.documentElement.style.setProperty('--poster-text-color', '#32b050')
+  document.documentElement.style.setProperty('--bg-dark', '#111')
+  document.documentElement.style.setProperty('--bg', '#000')
+  document.documentElement.style.setProperty('--text', '#32b050')
 
   return (
     <>
@@ -21,6 +20,7 @@ export default function TheMatrix() {
         <div className='col'></div>
         <div className='col'></div>
       </div>
+      <style type='text/css'>{css}</style>
     </>
   )
 }
