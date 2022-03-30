@@ -1,5 +1,5 @@
 import React from 'react'
-import css from './styles.css'
+import './styles.css'
 
 export default function Up() {
   document.documentElement.style.setProperty('--bg-dark', '#009fe3aa')
@@ -8,13 +8,14 @@ export default function Up() {
 
   return (
     <>
-      <h1>UP</h1>
-      <div class='globes'>
-        <div class='globe green'></div>
-        <div class='globe yellow'></div>
-        <div class='globe pink'></div>
+      <div className='home'>
+        <div className='title'>UP</div>
+        <div className='globes'>
+          <div className='globe green'></div>
+          <div className='globe yellow'></div>
+          <div className='globe pink'></div>
+        </div>
       </div>
-      <style type='text/css'>{css}</style>
     </>
   )
 }

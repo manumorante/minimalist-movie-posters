@@ -4,27 +4,23 @@
   --globe-pink: #f06;
 
   & {
+    position: relative;
+    background-color: var(--bg);
+  }
+
+  .home {
     position: absolute;
     top: 50%;
     left: 50%;
-    right: inherit;
-    bottom: inherit;
-    width: 500px;
-    height: 772px;
-    margin-top: -386px;
-    margin-left: -250px;
-    background: var(--bg) top center no-repeat;
-    background-size: 100% auto;
+    transform: translate(-50%, -50%);
   }
 
-  h1 {
-    position: absolute;
-    top: 297px;
-    left: 215px;
+  .title {
     font-family: Arial;
     font-weight: bold;
     color: var(--text);
-    font-size: 188px;
+    font-size: 138px;
+    letter-spacing: -10px;
   }
 
   .globes {

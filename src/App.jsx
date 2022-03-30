@@ -1,5 +1,6 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
+import Header from './components/Header'
 import Poster from './posters/Poster'
 import ForrestGump from './posters/ForrestGump'
 import TheMatrix from './posters/TheMatrix'
@@ -11,6 +12,7 @@ import Titanic from './posters/Titanic'
 export default function App() {
   return (
     <BrowserRouter>
+      <Header />
       <Routes>
         <Route path='/' element={<Navigate to='/forrest-gump' />} exact />
         <Route path='/' element={<Poster />}>

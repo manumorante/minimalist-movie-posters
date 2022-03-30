@@ -1,5 +1,5 @@
 import React from 'react'
-import css from './styles.css'
+import './styles.css'
 
 export default function KillBill() {
   document.documentElement.style.setProperty('--bg-dark', '#fac800aa')
@@ -13,7 +13,6 @@ export default function KillBill() {
       <svg className='sword'>
         <path d='M0,0h423c0,0-32.5,66.5-157,71.5H0V0z'></path>
       </svg>
-      <style type='text/css'>{css}</style>
     </>
   )
 }

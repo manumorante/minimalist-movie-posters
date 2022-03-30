@@ -11,7 +11,7 @@ body {
   background: var(--bg-dark, #000);
 }
 
-.Nav {
+.Header {
   color: var(--text, #fff);
   background: var(--bg, #000);
 }

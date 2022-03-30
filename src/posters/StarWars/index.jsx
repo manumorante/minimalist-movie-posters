@@ -1,5 +1,5 @@
 import React from 'react'
-import css from './styles.css'
+import './styles.css'
 
 export default function StarWars() {
   document.documentElement.style.setProperty('--bg-dark', '#111')
@@ -20,7 +20,6 @@ export default function StarWars() {
         <div className='side top'></div>
         <div className='side bottom'></div>
       </div>
-      <style type='text/css'>{css}</style>
     </>
   )
 }
