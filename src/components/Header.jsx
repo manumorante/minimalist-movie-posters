@@ -42,6 +42,7 @@ export default function Header() {
           <Link to='/star-wars'>Star Wars</Link>
           <Link to='/up'>Up</Link>
           <Link to='/titanic'>Titanic</Link>
+          <Link to='/home-alone'>Home Alone</Link>
         </nav>
       </div>
     </header>

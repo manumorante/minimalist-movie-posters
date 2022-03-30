@@ -8,6 +8,7 @@ import KillBill from './posters/KillBill'
 import StarWars from './posters/StarWars'
 import Up from './posters/Up'
 import Titanic from './posters/Titanic'
+import HomeAlone from './posters/HomeAlone'
 
 export default function App() {
   return (
@@ -22,6 +23,7 @@ export default function App() {
           <Route path='star-wars' element={<StarWars />} />
           <Route path='titanic' element={<Titanic />} />
           <Route path='up' element={<Up />} />
+          <Route path='home-alone' element={<HomeAlone />} />
         </Route>
       </Routes>
     </BrowserRouter>
