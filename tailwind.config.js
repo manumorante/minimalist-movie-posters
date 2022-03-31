@@ -5,7 +5,11 @@ module.exports = {
     './public/index.html',
   ],
   theme: {
-    extend: {},
+    extend: {
+      aspectRatio: {
+        poster: '2 / 3',
+      },
+    },
   },
   variants: {
     extend: {},

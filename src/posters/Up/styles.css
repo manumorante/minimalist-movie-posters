@@ -4,7 +4,7 @@
   --globe-pink: #f06;
 
   & {
-    background-color: var(--bg);
+    background-color: var(--bg, #009fe3);
   }
 
   .home {
@@ -17,7 +17,7 @@
   .title {
     font-family: Arial;
     font-weight: bold;
-    color: var(--text);
+    color: var(--text, #fff);
     font-size: 138px;
     letter-spacing: -10px;
   }
@@ -43,7 +43,7 @@
       left: 100%;
       display: block;
       content: ' ';
-      background-color: var(--text);
+      background-color: var(--text, #fff);
     }
   }
 

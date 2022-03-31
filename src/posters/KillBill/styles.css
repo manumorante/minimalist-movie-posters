@@ -5,8 +5,8 @@
 .kill-bill {
   & {
     overflow: hidden;
-    background-color: var(--bg);
-    color: var(--text);
+    background-color: var(--bg, #fac800);
+    color: var(--text, #000);
   }
 
   &:after {
