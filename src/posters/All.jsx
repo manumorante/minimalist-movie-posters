@@ -60,7 +60,7 @@ export default function All() {
             key={slug}
             to={`/${slug}`}
             title={title}
-            className={`${slug} snap-start relative w-full aspect-poster transition-colors overflow-hidden`}>
+            className={`${slug} snap-start relative w-full max-w-[500px] aspect-poster transition-colors overflow-hidden`}>
             {poster}
           </Link>
         ))}
