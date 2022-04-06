@@ -19,8 +19,8 @@
     animation: blood 5s infinite;
   }
 
-  h1,
-  h4 {
+  .title,
+  .subtitle {
     position: absolute;
     right: 0;
     bottom: 51px;
@@ -29,13 +29,13 @@
     text-align: center;
   }
 
-  h1 {
+  .title {
     bottom: 51px;
     font-size: 33px;
     letter-spacing: 1px;
   }
 
-  h4 {
+  .subtitle {
     bottom: 34px;
     font-size: 13px;
     font-weight: normal;
