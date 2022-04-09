@@ -1,5 +1,6 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
+import Observer from './components/Observer'
 import Header from './components/Header'
 import Poster from './posters/Poster'
 import All from './posters/All'
@@ -14,9 +15,10 @@ import HomeAlone from './posters/HomeAlone'
 export default function App() {
   return (
     <BrowserRouter>
-      <Header />
+      {/* <Header /> */}
       <Routes>
         <Route path='/' element={<All />} exact />
+        <Route path='/observer' element={<Observer />} exact />
         <Route path='/' element={<Poster />}>
           <Route path='forrest-gump' element={<ForrestGump />} />
           <Route path='the-matrix' element={<TheMatrix />} />

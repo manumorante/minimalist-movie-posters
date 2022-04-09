@@ -1,4 +1,5 @@
 .up {
+  --globe-size: 100px;
   --globe-green: #9c3;
   --globe-yellow: #ff0;
   --globe-pink: #f06;
@@ -11,20 +12,26 @@
     position: absolute;
     top: 60%;
     left: 50%;
+    width: 194px;
+    height: 100px;
     transform: translate(-50%, -50%);
   }
 
-  .title {
+  .home__title {
     font-family: Arial;
     font-weight: bold;
     color: var(--text, #fff);
     font-size: 138px;
-    letter-spacing: -10px;
+    line-height: 100px;
+  }
+
+  .title {
+    display: none;
   }
 
   .globes {
     position: absolute;
-    top: -216px;
+    bottom: 100%;
     left: 0;
     width: 237px;
     height: 276px;
@@ -32,22 +39,20 @@
 
   .globe {
     position: absolute;
-    width: 110px;
-    height: 110px;
+    width: var(--globe-size);
+    height: var(--globe-size);
     border-radius: 100% 100% 0;
-    transform: rotateZ(45deg);
-
-    &:after {
-      position: absolute;
-      bottom: 0;
-      left: 100%;
-      display: block;
-      content: ' ';
-      background-color: var(--text, #fff);
-    }
+    /* transform: rotateZ(45deg); */
   }
 
-  .green {
+  .rope {
+    position: absolute;
+    top: 100%;
+    height: 1px;
+    background-color: var(--text, #fff);
+  }
+
+  /* .green {
     top: 30px;
     left: 0;
     background-color: var(--globe-green);
@@ -55,7 +60,6 @@
     &:after {
       width: 130px;
       height: 1px;
-      transform: rotateZ(14deg) translate(0px, 15px);
     }
   }
 
@@ -67,7 +71,6 @@
     &:after {
       width: 115px;
       height: 1px;
-      transform: rotateZ(45deg) translate(18px, 42px);
     }
   }
 
@@ -79,7 +82,6 @@
     &:after {
       width: 155px;
       height: 1px;
-      transform: rotateZ(65deg) translate(40px, 70px);
     }
-  }
+  } */
 }
