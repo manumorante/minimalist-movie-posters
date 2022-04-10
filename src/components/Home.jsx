@@ -10,7 +10,7 @@ export default function Home() {
   const [activePosterID, setActivePosterID] = useState(firstPosterID)
   const [envStyles, setEnvStyles] = useState({})
 
-  function isMyTurn(posterID, activePosterID) {
+  function isMyTurn(posterID) {
     // If the poster is already displayed, show it
     if (DISPLAYED.includes(posterID)) return true
 
@@ -20,6 +20,10 @@ export default function Home() {
     // If it is, include it in the displayed list and show it
     DISPLAYED.push(posterID)
     return true
+  }
+
+  function showPoster(posterID) {
+    setActivePosterID(posterID)
   }
 
   useEffect(() => {
@@ -32,21 +36,43 @@ export default function Home() {
     })
   }, [activePosterID])
 
+  useEffect(() => {
+    const options = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 1,
+    }
+
+    const ob = new IntersectionObserver((entries) => {
+      entries.forEach((el) => {
+        if (
+          el.isIntersecting &&
+          PosterList.getBoundingClientRect().height >= 3286
+        ) {
+          showPoster(el.target.dataset.posterId)
+        }
+      })
+    }, options)
+
+    const PosterList = document.querySelector('.PosterList')
+    const elements = document.querySelectorAll('.Frame')
+    elements.forEach((el) => {
+      ob.observe(el)
+    })
+  }, [])
+
   return (
     <div
       className='Home bg-neutral-200 transition-colors duration-500'
       style={envStyles}>
-        
-
-
-      <div className='p-6 flex flex-col gap-8'>
+      <div className='PosterList p-6 flex flex-col gap-8'>
         {Object.keys(POSTERS).map((posterID) => {
           const poster = POSTERS[posterID]
           const PosterComponent = poster.component
           return (
             <Suspense key={posterID} fallback={null}>
-              <button onClick={() => setActivePosterID(posterID)}>
-                {isMyTurn(posterID, activePosterID) ? (
+              <button onClick={() => showPoster(posterID)}>
+                {isMyTurn(posterID) ? (
                   <Frame
                     id={posterID}
                     title={poster.title}
@@ -55,7 +81,7 @@ export default function Home() {
                   </Frame>
                 ) : (
                   // Print a empty frame as placeholder
-                  <Frame id='Frame' />
+                  <Frame id={posterID} />
                 )}
               </button>
             </Suspense>

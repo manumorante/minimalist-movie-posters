@@ -2,13 +2,14 @@ import React from 'react'
 
 export default function Frame({
   children = null,
-  id = '',
+  id = null,
   title = false,
   subtitle = false,
 }) {
   return (
     <div
-      className={`${id} relative w-full max-w-[500px] aspect-poster transition-colors overflow-hidden bg-white shadow-md`}>
+      className={`Frame ${id} relative w-full max-w-[500px] aspect-poster transition-colors overflow-hidden bg-white shadow-md`}
+      data-poster-id={id}>
       {title && <div className='title'>{title}</div>}
       {subtitle && <div className='subtitle'>{subtitle}</div>}
 
