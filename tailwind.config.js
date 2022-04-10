@@ -1,9 +1,5 @@
 module.exports = {
-  content: [
-    './src/**/*.{js,jsx,ts,tsx}',
-    './src/App.jsx',
-    './public/index.html',
-  ],
+  content: ['./src/**/*.jsx', './index.html'],
   theme: {
     extend: {
       aspectRatio: {

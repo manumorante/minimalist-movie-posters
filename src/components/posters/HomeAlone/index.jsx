@@ -2,13 +2,8 @@ import React from 'react'
 import './styles.css'
 
 export default function HomeAlone() {
-  document.documentElement.style.setProperty('--bg-dark', '#000')
-  document.documentElement.style.setProperty('--bg', '#222')
-  document.documentElement.style.setProperty('--text', '#aaa')
-
   return (
     <>
-      <div className='title'>Home Alone</div>
       <div className='pack Harry'>
         <div className='rope'></div>
         <div className='paint'>

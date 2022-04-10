@@ -2,14 +2,8 @@ import React from 'react'
 import './styles.css'
 
 export default function Titanic() {
-  document.documentElement.style.setProperty('--bg-dark', '#354463aa')
-  document.documentElement.style.setProperty('--bg', '#354463')
-  document.documentElement.style.setProperty('--text', '#ccc')
-
   return (
     <>
-      <h1>TITANIC</h1>
-
       <div className='scene'>
         <svg className='iceberg' width='200' height='83'>
           <polygon points='9,82 42,44 54,40 64,20 83,8 144.7,20 163,40 182,45 200,82' />

@@ -1,12 +1,10 @@
-:root {
+.KillBill {
   --blood: #ee0000;
-}
 
-.kill-bill {
   & {
     overflow: hidden;
-    background-color: var(--bg, #fac800);
-    color: var(--text, #000);
+    background-color: #fac800;
+    color: #000;
   }
 
   &:after {

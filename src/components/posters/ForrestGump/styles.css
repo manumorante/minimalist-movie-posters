@@ -1,9 +1,9 @@
-.forrest-gump {
+.ForrestGump {
   & {
     perspective: 800px;
     perspective-origin: 50% 25%;
-    background-color: var(--bg, #77b1c9);
-    color: var(--text, #fff);
+    background-color: #77b1c9;
+    color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -51,7 +51,7 @@
     position: absolute;
     width: 100%;
     height: 12px;
-    background-color: var(--text, #fff);
+    background-color: #ffffff;
   }
 
   .plank-1 {
@@ -75,7 +75,7 @@
     position: absolute;
     width: 11px;
     height: 105px;
-    background-color: var(--text, #fff);
+    background-color: #ffffff;
   }
 
   .leg-1 {

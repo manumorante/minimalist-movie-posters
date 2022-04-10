@@ -5,6 +5,17 @@ import Icon from './Icon'
 export default function Nav() {
   return (
     <nav className='flex flex-col sm:flex-row justify-center gap-5 transition-colors'>
+
+      {/* <nav className='flex flex-wrap gap-3'>
+        {Object.keys(POSTERS).map((posterID) => {
+          return (
+            <button key={posterID} onClick={() => setActivePosterID(posterID)}>
+              {POSTERS[posterID].title}
+            </button>
+          )
+        })}
+      </nav> */}
+
       <Link to='/' className='flex gap-3'>
         <Icon icon='back' />
         <div>Inicio</div>
