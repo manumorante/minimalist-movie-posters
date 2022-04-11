@@ -1,34 +1,9 @@
 .TheMatrix {
-  & {
-    perspective: 1000px;
-    perspective-origin: 50% 25%;
-    overflow: hidden;
-    background-color: var(--bg, #000);
-  }
+  --bg: #000000;
+  --text: #32b050;
 
-  .title,
-  .subtitle {
-    position: absolute;
-    right: 0;
-    left: 0;
-    z-index: 2;
-    text-align: center;
-    color: var(--text, #32b050);
-  }
-
-  .title {
-    bottom: 51px;
-    margin: 22px 0;
-    font-size: 33px;
-    font-weight: bold;
-    letter-spacing: 1px;
-  }
-
-  .subtitle {
-    bottom: 34px;
-    margin: 17px 0;
-    font-size: 13px;
-  }
+  background-color: var(--bg);
+  color: var(--text);
 
   .canvas {
     position: relative;
@@ -42,7 +17,7 @@
     top: 0;
     width: 5%;
     height: 100%;
-    background-color: var(--text, #32b050);
+    background-color: var(--text);
     z-index: 1;
   }
 
@@ -53,7 +28,7 @@
     display: block;
     width: 100%;
     height: 5%;
-    background-color: var(--bg, #000);
+    background-color: var(--bg);
   }
 
   .col:nth-child(1) {

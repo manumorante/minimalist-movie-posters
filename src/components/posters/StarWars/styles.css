@@ -1,30 +1,9 @@
 .StarWars {
-  & {
-    background-color: #000;
-    color: #aaa;
-  }
+  --bg: #222222;
+  --text: #ffffff;
 
-  .title,
-  .subtitle {
-    position: absolute;
-    right: 0;
-    bottom: 51px;
-    left: 0;
-    font-size: 33px;
-    text-align: center;
-  }
-
-  .title {
-    bottom: 51px;
-    font-size: 33px;
-    letter-spacing: 1px;
-  }
-
-  .subtitle {
-    bottom: 34px;
-    font-size: 13px;
-    font-weight: normal;
-  }
+  background-color: var(--bg);
+  color: var(--text);
 
   @keyframes spin {
     from {
@@ -53,7 +32,7 @@
     left: 0;
     width: 54px;
     height: 54px;
-    background-color: #000;
+    background-color: var(--bg);
     border-radius: 100%;
     transform: translateX(85px) translateZ(80px) translateY(41px) rotateX(5deg);
   }
@@ -68,7 +47,7 @@
     height: 220px;
     margin-top: -110px;
     margin-left: -110px;
-    background-color: #aaa;
+    background-color: var(--text);
     border-radius: 100%;
   }
 
@@ -84,7 +63,7 @@
     margin-left: -110px;
     display: block;
     content: '';
-    background-color: #000;
+    background-color: var(--bg);
   }
 
   @keyframes reveal-border {
@@ -92,7 +71,7 @@
       border-color: transparent;
     }
     50% {
-      border-color: #aaa;
+      border-color: var(--text);
     }
     100% {
       border-color: transparent;

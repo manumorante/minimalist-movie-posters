@@ -1,11 +1,11 @@
 .KillBill {
+  --bg: #fac800;
+  --text: #000000;
   --blood: #ee0000;
 
-  & {
-    overflow: hidden;
-    background-color: #fac800;
-    color: #000;
-  }
+  overflow: hidden;
+  background-color: var(--bg);
+  color: var(--text);
 
   &:after {
     opacity: 0;

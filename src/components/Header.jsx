@@ -1,6 +1,4 @@
 import React from 'react'
-import Icon from './Icon'
-import Nav from './Nav'
 
 export default function Header() {
   function handleMenu() {
@@ -9,20 +7,11 @@ export default function Header() {
   }
 
   return (
-    <header className='Header fixed z-10 top-0 w-full p-3'>
-      <div className='flex gap-2 items-center sm:justify-center'>
-        <div onClick={handleMenu}>
-          <Icon icon='burger' />
-        </div>
-
-        <div className='title font-bold w-full text-center'>
+    <header className='Header sticky z-10 top-0 w-full p-3 bg-black/50 backdrop-blur-md'>
+      <div className='flex gap-2'>
+        <div className='title font-bold w-full text-center text-white/80'>
           Minimalist Movie Posters
         </div>
-        <div className='w-6'></div>
-      </div>
-
-      <div className='Nav hidden sm:block mt-4' onClick={handleMenu}>
-        <Nav />
       </div>
     </header>
   )

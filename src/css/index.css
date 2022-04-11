@@ -2,12 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-.FrameXXX {
-  color: var(--text, #fff);
-  background: var(--bg-dark, #000);
-}
+.Frame {
+  .titles {
+    position: absolute;
+    right: 0;
+    bottom: 50px;
+    left: 0;
+    text-align: center;
 
-.Header {
-  color: var(--text, #fff);
-  background: var(--bg, #000);
+    .title {
+      font-size: 34px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .subtitle {
+      font-size: 16px;
+      font-weight: normal;
+    }
+  }
 }

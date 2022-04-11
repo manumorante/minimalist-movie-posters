@@ -4,9 +4,8 @@
   --globe-yellow: #ff0;
   --globe-pink: #f06;
 
-  & {
-    background-color: #009fe3;
-  }
+  color: var(--text);
+  background-color: #009fe3;
 
   .home {
     position: absolute;
@@ -20,7 +19,7 @@
   .home__title {
     font-family: Arial;
     font-weight: bold;
-    color: #fff;
+    color: var(--text);
     font-size: 138px;
     line-height: 100px;
   }
@@ -49,7 +48,7 @@
     position: absolute;
     top: 100%;
     height: 1px;
-    background-color: #fff;
+    background-color: var(--text);
   }
 
   /* .green {

@@ -1,18 +1,10 @@
 .HomeAlone {
-  & {
-    background-color: #222;
-    color: #aaa;
-  }
+  --red: #8d1200;
+  --green: #1e5824;
+  --text: #ffffff;
 
-  .title {
-    color: #eee;
-    text-align: center;
-    position: absolute;
-    bottom: 14%;
-    width: 100%;
-    font-size: 31px;
-    font-weight: bold;
-  }
+  background-color: var(--red);
+  color: var(--text);
 
   .pack {
     position: absolute;
@@ -25,14 +17,14 @@
   .rope {
     width: 1px;
     height: 320px;
-    background-color: #777;
+    background-color: var(--text);
   }
 
   .paint {
     position: relative;
     width: 81px;
     height: 92px;
-    background-color: #fff;
+    background-color: var(--text);
 
     &::before,
     &::after {
@@ -48,7 +40,7 @@
     &::after {
       top: 0;
       transform: translatey(-50%);
-      outline: 1px solid #aaa;
+      outline: 1px solid var(--text);
       outline-offset: -4px;
     }
 
@@ -62,7 +54,7 @@
     left: 24%;
 
     path {
-      fill: #bab062;
+      fill: var(--green);
     }
   }
 
@@ -70,7 +62,7 @@
     right: 24%;
 
     path {
-      fill: #ab3624;
+      fill: var(--red);
     }
   }
 }

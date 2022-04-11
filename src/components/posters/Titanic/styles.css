@@ -1,22 +1,12 @@
 .Titanic {
-  & {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 600;
-    color: var(--text, #ccc);
-    background-color: var(--bg, #354463);
-  }
+  --bg: #354463;
+  --text: #ffffff;
 
-  .title {
-    position: absolute;
-    right: 0;
-    bottom: 125px;
-    left: 0;
-    font-size: 32px;
-    text-align: center;
-    letter-spacing: 0;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--text);
+  background-color: var(--bg);
 
   .scene {
     position: relative;
@@ -38,7 +28,7 @@
       left: 90px;
       height: 0;
       transform: translateY(-100%);
-      fill: #354463;
+      fill: var(--bg);
       animation: bye 40s infinite;
     }
   }
