@@ -24,7 +24,7 @@ export default function App() {
 
   return (
     <div
-      className='Home bg-neutral-200 transition-colors duration-1000'
+      className='bg-neutral-200 transition-colors duration-1000'
       style={envStyles}>
       <Header />
       <PostersList />

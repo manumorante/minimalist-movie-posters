@@ -1,13 +1,15 @@
 .Up {
-  --globe-size: 100px;
-  --globe-green: #9c3;
-  --globe-yellow: #ff0;
-  --globe-pink: #f06;
+  --text: #fff;
+  --bg: #009fe3;
+  --green: #9c3;
+  --yellow: #ff0;
+  --pink: #f06;
+  --size: 100px;
 
   color: var(--text);
-  background-color: #009fe3;
+  background-color: var(--bg);
 
-  .home {
+  .scene {
     position: absolute;
     top: 60%;
     left: 50%;
@@ -16,16 +18,12 @@
     transform: translate(-50%, -50%);
   }
 
-  .home__title {
+  .home {
     font-family: Arial;
     font-weight: bold;
     color: var(--text);
     font-size: 138px;
     line-height: 100px;
-  }
-
-  .title {
-    display: none;
   }
 
   .globes {
@@ -38,25 +36,27 @@
 
   .globe {
     position: absolute;
-    width: var(--globe-size);
-    height: var(--globe-size);
+    width: var(--size);
+    height: var(--size);
     border-radius: 100% 100% 0;
-    /* transform: rotateZ(45deg); */
+    transform: rotateZ(45deg);
   }
 
   .rope {
     position: absolute;
     top: 100%;
-    height: 1px;
+    width: 1px;
+    height: 100%;
     background-color: var(--text);
+    transform: rotateZ(-45deg);
   }
 
-  /* .green {
+  .green {
     top: 30px;
     left: 0;
-    background-color: var(--globe-green);
+    background-color: var(--green);
 
-    &:after {
+    .ropeX {
       width: 130px;
       height: 1px;
     }
@@ -65,9 +65,9 @@
   .yellow {
     top: 30px;
     left: 72px;
-    background-color: var(--globe-yellow);
+    background-color: var(--yellow);
 
-    &:after {
+    .ropeX {
       width: 115px;
       height: 1px;
     }
@@ -76,11 +76,11 @@
   .pink {
     top: 0px;
     right: 0;
-    background-color: var(--globe-pink);
+    background-color: var(--pink);
 
-    &:after {
+    .ropeX {
       width: 155px;
       height: 1px;
     }
-  } */
+  }
 }

@@ -4,12 +4,18 @@ import './styles.css'
 export default function Up() {
   return (
     <>
-      <div className='home'>
-        <div className='title'>UP</div>
+      <div className='scene'>
+        <div className='home'>UP</div>
         <div className='globes'>
-          <div className='globe green'></div>
-          <div className='globe yellow'></div>
-          <div className='globe pink'></div>
+          <div className='globe green'>
+            <div className='rope'></div>
+          </div>
+          <div className='globe yellow'>
+            <div className='rope'></div>
+          </div>
+          <div className='globe pink'>
+            <div className='rope'></div>
+          </div>
         </div>
       </div>
     </>
