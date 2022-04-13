@@ -7,17 +7,15 @@ import PostersList from './components/PosterList'
 
 export default function App() {
   const [envStyles, setEnvStyles] = useState({})
-  const { posters, activePosterID } = usePosters()
+  const { activePoster } = usePosters()
   const togglePoster = usePosterToggle()
 
   useEffect(() => {
-    const colors = posters[activePosterID]?.colors
-
     setEnvStyles({
-      backgroundColor: colors['wrap'],
-      color: colors['text'],
+      backgroundColor: activePoster.colors['wrap'],
+      color: activePoster.colors['text'],
     })
-  }, [activePosterID])
+  }, [activePoster])
 
   useEffect(() => {
     const posterDomElements = document.querySelectorAll('.Frame')

@@ -17,16 +17,18 @@ const firstPosterID = Object.keys(POSTERS)[0]
 export default function AppProvider({ children }) {
   const initialPostersData = {
     posters: POSTERS,
-    activePosterID: firstPosterID,
+    activePoster: POSTERS[firstPosterID],
   }
 
   const [postersData, setPostersData] = useState(initialPostersData)
 
   function togglePoster(posterID) {
-    setPostersData((prevPostersData) => ({
-      ...prevPostersData,
-      activePosterID: posterID,
-    }))
+    setPostersData((prevPostersData) => {
+      return {
+        posters: prevPostersData.posters,
+        activePoster: prevPostersData.posters[posterID],
+      }
+    })
   }
 
   return (

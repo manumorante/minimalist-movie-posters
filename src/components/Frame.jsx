@@ -1,16 +1,11 @@
 import React from 'react'
 
-export default function Frame({
-  children = null,
-  id = null,
-  title = false,
-  subtitle = false,
-  activePosterID = null,
-}) {
-  const isMyTurn = id === activePosterID
-  const classes = isMyTurn
-    ? 'opacity-100 shadow-md scale-110 z-20'
-    : 'opacity-50 z-10'
+export default function Frame({ children, poster, activePosterID }) {
+  const { id, title, subtitle } = poster
+  const classes =
+    id === activePosterID
+      ? 'opacity-100 shadow-md scale-110 z-20'
+      : 'opacity-50 z-10'
 
   return (
     <div
@@ -21,7 +16,7 @@ export default function Frame({
         {subtitle && <div className='subtitle'>{subtitle}</div>}
       </div>
 
-      {children || null}
+      {children}
     </div>
   )
 }

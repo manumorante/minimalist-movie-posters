@@ -29,7 +29,7 @@ export const POSTERS = {
     component: lazy(() => import('./components/posters/StarWars')),
   },
   TheMatrix: {
-    id: 'The Matrix',
+    id: 'TheMatrix',
     title: 'The Matrix',
     subtitle: '1999, Wachowski Brothers',
     colors: { wrap: '#024412', body: '#000000', text: '#ffffff' },

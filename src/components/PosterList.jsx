@@ -3,7 +3,7 @@ import { usePosters } from '../AppProvider'
 import Frame from './Frame'
 
 export default function PosterList() {
-  const { posters, activePosterID } = usePosters()
+  const { posters, activePoster } = usePosters()
 
   return (
     <div className='PosterList p-10 flex flex-col gap-8 items-center'>
@@ -12,11 +12,7 @@ export default function PosterList() {
         const PosterComponent = poster.component
         return (
           <Suspense key={posterID} fallback={null}>
-            <Frame
-              id={posterID}
-              title={poster.title}
-              subtitle={poster.subtitle}
-              activePosterID={activePosterID}>
+            <Frame poster={poster} activePosterID={activePoster.id}>
               <PosterComponent />
             </Frame>
           </Suspense>
