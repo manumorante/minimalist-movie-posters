@@ -49,4 +49,11 @@ export const POSTERS = {
     colors: { wrap: '#009fe3aa', body: '#009fe3', text: '#ffffff' },
     component: lazy(() => import('./components/posters/Up')),
   },
+  MonstersInc: {
+    id: 'MonstersInc',
+    title: 'Monsters, Inc',
+    subtitle: '2002, Pete Docter',
+    colors: { wrap: '#451a43', body: '#70346e', text: '#ffffff' },
+    component: lazy(() => import('./components/posters/MonstersInc')),
+  },
 }
