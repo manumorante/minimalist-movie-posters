@@ -5,7 +5,7 @@ export default function Frame({ children, poster, activePosterID }) {
   const [classID, setClassID] = useState(id)
   const classes =
     id === activePosterID
-      ? 'active opacity-100 shadow-md scale-110 z-20'
+      ? 'active opacity-100 shadow-md scale-[1.15] z-20'
       : 'opacity-50 z-10'
 
   return (
