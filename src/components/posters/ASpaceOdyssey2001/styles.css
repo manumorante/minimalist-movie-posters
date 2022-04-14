@@ -1,0 +1,100 @@
+.ASpaceOdyssey2001 {
+  --bg: #829cff;
+  --text: #622022;
+  --bg-400: #49578f;
+  --bg-800: #343f6a;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--bg);
+  color: var(--text);
+  perspective: 400px;
+  perspective-origin: 0% 50%;
+
+  .hal9000 {
+    /* 234 692 */
+    --width: 120px;
+    --height: 350px;
+    --deep: 20px;
+
+    --width-half: calc(var(--width) / 2);
+    --height-half: calc(var(--height) / 2);
+    --deep-half: calc(var(--deep) / 2);
+
+    width: var(--width);
+    height: var(--height);
+    transform-style: preserve-3d;
+    transition: transform 1s;
+    transform: rotateY(30deg);
+    position: relative;
+
+    .face {
+      position: absolute;
+      /* border: 1px solid #fff; */
+      background-color: var(--text);
+    }
+
+    /* OPTICA */
+    .front {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .optica {
+        width: 80%;
+        height: auto;
+        aspect-ratio: 1 / 1;
+        border-radius: 100%;
+        border: 4px solid var(--bg-800);
+      }
+    }
+
+    /* Faces */
+    .front,
+    .back {
+      width: var(--width);
+      height: var(--height);
+      background-color: var(--bg-400);
+    }
+
+    .front {
+      transform: rotateY(0deg) translateZ(var(--deep-half));
+    }
+
+    .back {
+      transform: rotateY(180deg) translateZ(var(--deep-half));
+    }
+
+    .left,
+    .right {
+      left: calc(var(--width-half) - var(--deep-half));
+      width: var(--deep);
+      height: var(--height);
+      background-color: var(--bg-800);
+    }
+
+    .left {
+      transform: rotateY(-90deg) translateZ(var(--width-half));
+    }
+
+    .right {
+      transform: rotateY(90deg) translateZ(var(--width-half));
+    }
+
+    .top,
+    .bottom {
+      top: calc(var(--height-half) - var(--deep-half));
+      width: var(--width);
+      height: var(--deep);
+    }
+    .top {
+      transform: rotateX(90deg) translateZ(var(--height-half));
+    }
+
+    .bottom {
+      transform: rotateX(-90deg) translateZ(var(--height-half));
+    }
+  }
+}

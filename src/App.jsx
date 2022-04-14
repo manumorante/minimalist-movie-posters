@@ -25,7 +25,7 @@ export default function App() {
 
   return (
     <div
-      className='App bg-neutral-200 transition-colors duration-1000'
+      className='App bg-neutral-200 transition-colors duration-1000 pb-[50vh]'
       style={envStyles}>
       <Header />
       <div className='max-w-[500px] mx-auto p-10 sm:mt-10'>

@@ -56,4 +56,19 @@ export const POSTERS = {
     colors: { wrap: '#451a43', body: '#70346e', text: '#ffffff' },
     component: lazy(() => import('./components/posters/MonstersInc')),
   },
+  TheTrumanShow: {
+    id: 'TheTrumanShow',
+    title: 'The Truman Show',
+    subtitle: '1998, Peter Weir',
+    colors: { wrap: '#622022', body: '#829CFF', text: '#622022' },
+    component: lazy(() => import('./components/posters/TheTrumanShow')),
+  },
+  ASpaceOdyssey2001: {
+    id: 'ASpaceOdyssey2001',
+    title: '2001: A Space Odyssey',
+    subtitle: '1968, Stanley Kubrick',
+    slogan: '1968, Stanley Kubrick',
+    colors: { wrap: '#000000', body: '#555555', text: '#111111' },
+    component: lazy(() => import('./components/posters/ASpaceOdyssey2001')),
+  },
 }

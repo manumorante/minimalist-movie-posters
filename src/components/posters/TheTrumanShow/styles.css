@@ -1,0 +1,11 @@
+.TheTrumanShow {
+  --bg: #829cff;
+  --text: #622022;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--bg);
+  color: var(--text);
+}

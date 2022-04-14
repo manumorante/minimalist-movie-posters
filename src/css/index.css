@@ -4,31 +4,14 @@
 
 .Frame {
   .titles {
-    position: absolute;
-    right: 0;
-    bottom: 30px;
-    left: 0;
-    text-align: center;
+    @apply absolute right-0 bottom-8 sm:bottom-12 left-0 text-center;
   }
 
   .title {
-    font-size: 24px;
-    font-weight: bold;
-    letter-spacing: 1px;
+    @apply text-xl jl:text-2xl sm:text-3xl font-bold leading-none jl:leading-none px-6;
   }
 
   .subtitle {
-    font-size: 16px;
-    font-weight: normal;
-  }
-
-  @media (min-width: 768px) {
-    .titles {
-      bottom: 50px;
-    }
-
-    .title {
-      font-size: 34px;
-    }
+    @apply text-base font-normal;
   }
 }
