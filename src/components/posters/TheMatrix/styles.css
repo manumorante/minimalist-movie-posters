@@ -7,144 +7,54 @@
 
   .canvas {
     position: relative;
+    display: flex;
+    justify-content: space-around;
     width: 60%;
     height: 60%;
     margin: 20% auto 0;
   }
 
   .col {
-    position: absolute;
-    top: 0;
+    position: relative;
     width: 5%;
     height: 100%;
     background-color: var(--text);
     z-index: 1;
   }
 
-  .col::after {
+  .col:nth-child(odd):after {
     position: absolute;
-    left: 0;
+    top: -5%;
     content: '';
     display: block;
     width: 100%;
     height: 5%;
     background-color: var(--bg);
-  }
-
-  .col:nth-child(1) {
-    left: 0%;
+    animation: text linear infinite;
   }
 
   .col:nth-child(1):after {
-    animation: text0 1600ms linear infinite;
-  }
-
-  @keyframes text0 {
-    from {
-      top: -5%;
-    }
-
-    to {
-      top: 100%;
-    }
-  }
-
-  .col:nth-child(2) {
-    left: 13.5%;
-  }
-
-  .col:nth-child(2):after {
-    display: none;
-  }
-
-  .col:nth-child(3) {
-    left: 27%;
+    animation-duration: 1.6s;
   }
 
   .col:nth-child(3):after {
-    animation: text2 1800ms linear infinite;
-  }
-
-  @keyframes text2 {
-    from {
-      top: -5%;
-    }
-    to {
-      top: 100%;
-    }
-  }
-
-  .col:nth-child(4) {
-    left: 40.5%;
-  }
-
-  .col:nth-child(4):after {
-    display: none;
-  }
-
-  .col:nth-child(5) {
-    left: 54%;
+    animation-duration: 1.8s;
   }
 
   .col:nth-child(5):after {
-    animation: text4 2000ms linear infinite;
-  }
-
-  @keyframes text4 {
-    from {
-      top: -5%;
-    }
-    to {
-      top: 100%;
-    }
-  }
-
-  .col:nth-child(6) {
-    left: 67.5%;
-  }
-
-  .col:nth-child(6):after {
-    display: none;
-  }
-
-  .col:nth-child(7) {
-    left: 81%;
+    animation-duration: 2s;
   }
 
   .col:nth-child(7):after {
-    animation: text6 2200ms linear infinite;
+    animation-duration: 2.2s;
   }
 
-  @keyframes text6 {
-    from {
-      top: -5%;
-    }
-    to {
-      top: 100%;
-    }
+    .col:nth-child(9):after {
+    animation-duration: 2.4s linear infinite;
   }
 
-  .col:nth-child(8) {
-    left: 94.5%;
-  }
-
-  .col:nth-child(8):after {
-    display: none;
-  }
-
-  .col:nth-child(9) {
-    left: 108%;
-  }
-
-  .col:nth-child(9):after {
-    animation: text8 2400ms linear infinite;
-  }
-
-  @keyframes text8 {
-    from {
-      top: -5%;
-    }
-    to {
+  @keyframes text {
+    100% {
       top: 100%;
     }
   }

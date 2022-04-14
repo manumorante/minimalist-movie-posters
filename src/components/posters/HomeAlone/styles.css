@@ -9,6 +9,7 @@
   .pack {
     position: absolute;
     top: 0;
+    left: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,8 +17,14 @@
 
   .rope {
     width: 1px;
-    height: 280px;
+    height: 120px;
     background-color: var(--text);
+  }
+
+  @media (min-width: 420px) {
+    .rope {
+      height: 280px;
+    }
   }
 
   .paint {
@@ -40,8 +47,6 @@
     &::after {
       top: 0;
       transform: translatey(-50%);
-      outline: 1px solid var(--text);
-      outline-offset: -4px;
     }
 
     &::before {
@@ -51,7 +56,7 @@
   }
 
   .Harry {
-    left: 24%;
+    transform: translatex(-50%);
 
     path {
       fill: var(--green);
@@ -59,10 +64,21 @@
   }
 
   .Marv {
-    right: 24%;
+    display: none;
+  }
 
-    path {
-      fill: var(--red);
+  @media (min-width: 420px) {
+    .Harry {
+      transform: translatex(-140%);
+    }
+
+    .Marv {
+      display: flex;
+      transform: translatex(30%);
+
+      path {
+        fill: var(--red);
+      }
     }
   }
 }

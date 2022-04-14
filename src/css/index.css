@@ -6,19 +6,29 @@
   .titles {
     position: absolute;
     right: 0;
-    bottom: 50px;
+    bottom: 30px;
     left: 0;
     text-align: center;
+  }
+
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+    font-weight: normal;
+  }
+
+  @media (min-width: 768px) {
+    .titles {
+      bottom: 50px;
+    }
 
     .title {
       font-size: 34px;
-      font-weight: bold;
-      letter-spacing: 1px;
-    }
-
-    .subtitle {
-      font-size: 16px;
-      font-weight: normal;
     }
   }
 }

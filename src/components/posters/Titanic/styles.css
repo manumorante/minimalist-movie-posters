@@ -12,31 +12,34 @@
     position: relative;
     width: 200px;
     height: 283px;
+  }
 
-    .iceberg {
-      fill: white;
-      margin-bottom: 2px;
-    }
+  .iceberg {
+    fill: white;
+    margin-bottom: 2px;
+  }
 
-    .underwater {
-      fill: #ffffff60;
-    }
+  .underwater {
+    fill: #ffffff60;
+  }
 
-    .transatlantic {
-      position: absolute;
-      top: 84px;
-      left: 90px;
-      height: 0;
-      transform: translateY(-100%);
-      fill: var(--bg);
-      animation: bye 40s infinite;
-    }
+  .transatlantic {
+    position: absolute;
+    top: 84px;
+    left: 110px;
+    height: 24px;
+    transform: translateY(-100%);
+    fill: var(--bg);
+  }
+
+  &.active .transatlantic {
+    animation: bye 40s infinite;
   }
 
   @keyframes bye {
-    0% {
-      left: 110px;
-      height: 24px;
+    100% {
+      left: 90px;
+      height: 0;
     }
   }
 }

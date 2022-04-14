@@ -1,15 +1,16 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 
 export default function Frame({ children, poster, activePosterID }) {
   const { id, title, subtitle } = poster
+  const [classID, setClassID] = useState(id)
   const classes =
     id === activePosterID
-      ? 'opacity-100 shadow-md scale-110 z-20'
+      ? 'active opacity-100 shadow-md scale-110 z-20'
       : 'opacity-50 z-10'
 
   return (
     <div
-      className={`Frame ${id} ${classes} relative w-full max-w-[500px] aspect-poster transition-all duration-1000 overflow-hidden bg-white`}
+      className={`Frame ${classID} ${classes} relative w-full max-w-[500px] aspect-poster transition-all duration-1000 overflow-hidden `}
       data-poster-id={id}>
       <div className='titles'>
         {title && <div className='title'>{title}</div>}
