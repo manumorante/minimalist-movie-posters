@@ -29,8 +29,8 @@ export default function App() {
       className='App bg-neutral-200 transition-colors duration-1000'
       style={envStyles}>
       <Header />
-        <Hello />
-      <div className='max-w-[500px] mx-auto p-10'>
+      <Hello />
+      <div className='max-w-[500px] mx-auto p-10 sm:mt-10'>
         <PostersList />
         <Bye />
       </div>
