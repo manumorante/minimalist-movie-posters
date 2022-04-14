@@ -12,7 +12,7 @@ export function usePosterToggle(id) {
   return useContext(posterToggleContext)
 }
 
-const firstPosterID = Object.keys(POSTERS)[0]
+const firstPosterID = Object.keys(POSTERS)[3]
 
 export default function AppProvider({ children }) {
   const initialPostersData = {
