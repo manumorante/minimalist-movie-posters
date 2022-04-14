@@ -5,6 +5,7 @@ import { posterObserver } from './posterObserver'
 import Header from './components/Header'
 import PostersList from './components/PosterList'
 import Hello from './components/Hello'
+import Bye from './components/Bye'
 
 export default function App() {
   const [envStyles, setEnvStyles] = useState({})
@@ -31,6 +32,7 @@ export default function App() {
         <Hello />
       <div className='max-w-[500px] mx-auto p-10'>
         <PostersList />
+        <Bye />
       </div>
     </div>
   )
