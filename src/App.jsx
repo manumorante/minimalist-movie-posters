@@ -4,7 +4,6 @@ import { usePosters, usePosterToggle } from './AppProvider'
 import { posterObserver } from './posterObserver'
 import Header from './components/Header'
 import PostersList from './components/PosterList'
-import Hello from './components/Hello'
 import Bye from './components/Bye'
 
 export default function App() {
@@ -29,11 +28,10 @@ export default function App() {
       className='App bg-neutral-200 transition-colors duration-1000'
       style={envStyles}>
       <Header />
-      <Hello />
       <div className='max-w-[500px] mx-auto p-10 sm:mt-10'>
         <PostersList />
-        <Bye />
       </div>
+      <Bye />
     </div>
   )
 }
