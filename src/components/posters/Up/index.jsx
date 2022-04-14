@@ -5,18 +5,21 @@ export default function Up() {
   return (
     <>
       <div className='scene'>
-        <div className='home'>UP</div>
         <div className='globes'>
-          <div className='globe green'>
+          <div className='pack green'>
             <div className='rope'></div>
+            <div className='globe '></div>
           </div>
-          <div className='globe yellow'>
+          <div className='pack yellow'>
             <div className='rope'></div>
+            <div className='globe '></div>
           </div>
-          <div className='globe pink'>
+          <div className='pack pink'>
             <div className='rope'></div>
+            <div className='globe '></div>
           </div>
         </div>
+        <div className='UP'>UP</div>
       </div>
     </>
   )

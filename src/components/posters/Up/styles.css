@@ -4,21 +4,33 @@
   --green: #9c3;
   --yellow: #ff0;
   --pink: #f06;
-  --size: 100px;
+  --globe: 100px;
+  --size: 200px;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: var(--text);
   background-color: var(--bg);
 
   .scene {
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    width: 194px;
-    height: 100px;
-    transform: translate(-50%, -50%);
+    zoom: 0.7;
+    width: var(--size);
+    display: flex;
+    flex-direction: column;
   }
 
-  .home {
+  .title {
+    visibility: hidden;
+  }
+
+  @media (min-width: 400px) {
+    .scene {
+      zoom: 1;
+    }
+  }
+
+  .UP {
     font-family: Arial;
     font-weight: bold;
     color: var(--text);
@@ -27,60 +39,58 @@
   }
 
   .globes {
-    position: absolute;
-    bottom: 100%;
-    left: 0;
-    width: 237px;
-    height: 276px;
+    width: var(--size);
+    height: var(--size);
+    transform: translateX(40px);
+
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .pack {
+    position: relative;
+    width: var(--globe);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .globe {
-    position: absolute;
-    width: var(--size);
-    height: var(--size);
+    position: relative;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
     border-radius: 100% 100% 0;
     transform: rotateZ(45deg);
   }
 
   .rope {
     position: absolute;
-    top: 100%;
+    bottom: 0;
     width: 1px;
     height: 100%;
     background-color: var(--text);
-    transform: rotateZ(-45deg);
+    /*transform: rotateZ(-45deg) translateX(-50%);*/
   }
 
   .green {
-    top: 30px;
-    left: 0;
-    background-color: var(--green);
+    transform: rotate(-20deg) translate(28px, 17px);
 
-    .ropeX {
-      width: 130px;
-      height: 1px;
+    .globe {
+      background-color: var(--green);
     }
   }
 
-  .yellow {
-    top: 30px;
-    left: 72px;
+  .yellow .globe {
     background-color: var(--yellow);
-
-    .ropeX {
-      width: 115px;
-      height: 1px;
-    }
   }
 
   .pink {
-    top: 0px;
-    right: 0;
-    background-color: var(--pink);
+    transform: rotate(20deg) translate(-28px, 17px);
 
-    .ropeX {
-      width: 155px;
-      height: 1px;
+    .globe {
+      background-color: var(--pink);
     }
   }
 }
