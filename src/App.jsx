@@ -4,6 +4,7 @@ import { usePosters, usePosterToggle } from './AppProvider'
 import { posterObserver } from './posterObserver'
 import Header from './components/Header'
 import PostersList from './components/PosterList'
+import Hello from './components/Hello'
 
 export default function App() {
   const [envStyles, setEnvStyles] = useState({})
@@ -24,10 +25,13 @@ export default function App() {
 
   return (
     <div
-      className='bg-neutral-200 transition-colors duration-1000'
+      className='App bg-neutral-200 transition-colors duration-1000'
       style={envStyles}>
       <Header />
-      <PostersList />
+        <Hello />
+      <div className='max-w-[500px] mx-auto p-10'>
+        <PostersList />
+      </div>
     </div>
   )
 }

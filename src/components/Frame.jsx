@@ -10,7 +10,7 @@ export default function Frame({ children, poster, activePosterID }) {
 
   return (
     <div
-      className={`Frame ${classID} ${classes} relative w-full max-w-[500px] aspect-poster transition-all duration-1000 overflow-hidden `}
+      className={`Frame ${classID} ${classes} relative w-full aspect-poster transition-all duration-1000 overflow-hidden `}
       data-poster-id={id}>
       <div className='titles'>
         {title && <div className='title'>{title}</div>}

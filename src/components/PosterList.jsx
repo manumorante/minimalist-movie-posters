@@ -6,7 +6,7 @@ export default function PosterList() {
   const { posters, activePoster } = usePosters()
 
   return (
-    <div className='PosterList p-10 flex flex-col gap-8 items-center'>
+    <div className='PosterList flex flex-col gap-8 items-center'>
       {Object.keys(posters).map((posterID) => {
         const poster = posters[posterID]
         const PosterComponent = poster.component
