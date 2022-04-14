@@ -9,9 +9,16 @@
   background-color: var(--bg);
 
   .scene {
+    zoom: 0.7;
     position: relative;
     width: 200px;
     height: 283px;
+  }
+
+  @media (min-width: 400px) {
+    .scene {
+      zoom: 1;
+    }
   }
 
   .iceberg {

@@ -20,6 +20,7 @@
   }
 
   .sword {
+    zoom: 0.5;
     position: absolute;
     top: 50%;
     left: 0;
@@ -27,6 +28,13 @@
     height: 71px;
     transform: translateX(0%);
     animation: kill 5s ease-in-out forwards infinite;
+  }
+
+  @media  (min-width: 400px) {
+    .sword {
+      zoom: 1;
+    }
+    
   }
 
   @keyframes kill {

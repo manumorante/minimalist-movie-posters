@@ -38,7 +38,7 @@
   }
 
   &.active .death-ray {
-    animation: spin 12s infinite ease-in-out alternate;
+    animation: spin 10s infinite ease-in-out alternate;
   }
 
   .death-ray::after {
@@ -49,7 +49,7 @@
     aspect-ratio: 1 / 1;
     background-color: var(--bg);
     border-radius: 100%;
-    transform: translateX(150%) translateZ(80px) translateY(41px) rotateX(5deg);
+    transform: translate3d(150%, 80%, 80px) rotateX(20deg);
   }
 
   @keyframes spin {
