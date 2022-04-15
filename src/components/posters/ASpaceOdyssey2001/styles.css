@@ -48,6 +48,7 @@
         aspect-ratio: 1 / 1;
         border-radius: 100%;
         border: 4px solid var(--bg-800);
+        background-color: var(--text);
       }
     }
 
