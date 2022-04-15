@@ -60,7 +60,7 @@ export const POSTERS = {
     id: 'TheTrumanShow',
     title: 'The Truman Show',
     subtitle: '1998, Peter Weir',
-    colors: { wrap: '#622022', body: '#829CFF', text: '#622022' },
+    colors: { wrap: '#2e3551', body: '#53629b', text: '#cdcfd7' },
     component: lazy(() => import('./components/posters/TheTrumanShow')),
   },
   ASpaceOdyssey2001: {

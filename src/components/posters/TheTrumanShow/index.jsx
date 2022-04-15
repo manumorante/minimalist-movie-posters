@@ -4,8 +4,25 @@ import './styles.css'
 export default function TheTrumanShow() {
   return (
     <>
-      <div className='escaleras'>
-        <div className='puerta'></div>
+      <div className='scene'>
+        <div className='door'></div>
+        <div className='stairs'>
+          <div className='first'>
+            <div className='step'>
+              <div className='step'>
+                <div className='step'>
+                  <div className='step'>
+                    <div className='step'>
+                      <div className='step'>
+                        <div className='step'></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   )

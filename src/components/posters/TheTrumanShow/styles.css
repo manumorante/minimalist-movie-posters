@@ -1,6 +1,7 @@
 .TheTrumanShow {
-  --bg: #829cff;
-  --text: #622022;
+  --bg: #53629b;
+  --text: #cdcfd7;
+  --size: 20%; /* Ancho de la puerta en base a la escena */
 
   display: flex;
   justify-content: center;
@@ -8,4 +9,68 @@
 
   background-color: var(--bg);
   color: var(--text);
+
+  .scene {
+    width: 70%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 20px;
+  }
+
+  .door {
+    position: relative;
+    width: var(--size);
+    height: auto;
+    aspect-ratio: 4 / 8;
+    background-color: #2e3551;
+  }
+
+  .door::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg);
+    transform-origin: right;
+    transition: all 2s ease-out;
+  }
+
+  &.active .door::before {
+    transform: perspective(800px) translateZ(0px) translateX(0px)
+      translateY(0px) rotateY(-85deg);
+  }
+
+  .stairs {
+    position: relative;
+    width: var(--size);
+    height: 0;
+    border-bottom: 2px solid var(--text);
+  }
+
+  .step {
+    box-sizing: content-box;
+    position: absolute;
+    top: 100%;
+    right: 100%;
+    width: 100%;
+    height: 100%;
+    border: 2px solid transparent;
+    border-top-color: var(--text);
+    border-left-color: var(--text);
+  }
+
+  .first {
+    box-sizing: content-box;
+    position: relative;
+    right: 0;
+    --step: calc(100% / 2);
+
+    /* Define las dimensiones del primer step, los demás lo siguen usando porcentages */
+    width: var(--step);
+    height: auto;
+    aspect-ratio: 1 / 1;
+    border-left: 2px solid var(--text);
+  }
 }

@@ -4,16 +4,46 @@
 
 .Frame {
   .titles {
-    @apply absolute right-0 bottom-8 sm:bottom-12 left-0 text-center;
+    @apply absolute
+      right-0
+      bottom-8
+      sm:bottom-12
+      left-0
+      text-center;
   }
 
   .title {
-    @apply text-xl jl:text-2xl sm:text-3xl font-bold leading-none jl:leading-none px-6;
+    @apply text-xl
+    jl:text-2xl
+    sm:text-3xl
+    font-bold
+    leading-none
+    jl:leading-none
+    px-6;
   }
 
   .subtitle {
-    @apply text-base font-normal;
+    @apply text-base
+    font-normal;
   }
+}
+
+.Frame {
+  @apply relative
+    w-full
+    aspect-poster
+    transition-all
+    duration-1000
+    rounded-md
+    overflow-hidden;
+}
+
+.Frame.active {
+  @apply opacity-100 shadow-md scale-[1.15] z-20;
+}
+
+.Frame.default {
+  @apply opacity-50 z-10;
 }
 
 .Frame::before {
@@ -24,7 +54,8 @@
     rounded-md
     bg-no-repeat
     bg-clip-padding
-    bg-[length:100%_1px];
+    bg-[length:100%_1px]
+    pointer-events-none;
   box-shadow: inset 0 0 0 1px rgb(221 238 255 / 35%);
   background-image: linear-gradient(
     90deg,
