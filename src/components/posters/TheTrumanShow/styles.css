@@ -1,6 +1,4 @@
 .TheTrumanShow {
-  --bg: #53629b;
-  --text: #cdcfd7;
   --size: 20%; /* Ancho de la puerta en base a la escena */
 
   display: flex;

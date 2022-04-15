@@ -1,7 +1,4 @@
 .TheMatrix {
-  --bg: #000000;
-  --text: #32b050;
-
   background-color: var(--bg);
   color: var(--text);
 

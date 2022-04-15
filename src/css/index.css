@@ -32,10 +32,14 @@
   @apply relative
     w-full
     aspect-poster
-    transition-all
     duration-1000
     rounded-md
-    overflow-hidden;
+    overflow-hidden
+    transition-all;
+
+  * {
+    @apply transition-all;
+  }
 }
 
 .Frame.active {

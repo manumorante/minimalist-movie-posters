@@ -1,7 +1,4 @@
 .Titanic {
-  --bg: #354463;
-  --text: #ffffff;
-
   display: flex;
   justify-content: center;
   align-items: center;

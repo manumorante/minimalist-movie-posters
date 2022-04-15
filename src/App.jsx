@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react'
 import './css/index.css'
 import { usePosters, usePosterToggle } from './AppProvider'
 import { posterObserver } from './posterObserver'
-import Header from './components/Header'
 import PostersList from './components/PosterList'
 import Bye from './components/Bye'
 
@@ -25,10 +24,9 @@ export default function App() {
 
   return (
     <div
-      className='App bg-neutral-200 transition-colors duration-1000 pb-[50vh]'
+      className='App bg-neutral-200 transition-colors duration-1000 pb-[50vh] pt-10'
       style={envStyles}>
-      <Header />
-      <div className='max-w-[500px] mx-auto p-10 sm:mt-10'>
+      <div className='max-w-[500px] mx-auto p-10'>
         <PostersList />
       </div>
       <Bye />

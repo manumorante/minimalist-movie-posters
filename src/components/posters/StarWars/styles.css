@@ -1,7 +1,5 @@
 .StarWars {
   --size: 40%;
-  --bg: #222222;
-  --text: #ffffff;
 
   display: flex;
   justify-content: center;

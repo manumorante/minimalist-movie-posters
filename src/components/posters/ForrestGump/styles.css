@@ -1,7 +1,4 @@
 .ForrestGump {
-  --bg: #77b1c9;
-  --text: #ffffff;
-
   perspective: 800px;
   perspective-origin: 50% 25%;
   background-color: var(--bg);

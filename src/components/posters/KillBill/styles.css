@@ -1,8 +1,4 @@
 .KillBill {
-  --bg: #fac800;
-  --text: #000000;
-  --blood: #ee0000;
-
   overflow: hidden;
   background-color: var(--bg);
   color: var(--text);

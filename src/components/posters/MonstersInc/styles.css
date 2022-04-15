@@ -1,7 +1,4 @@
 .MonstersInc {
-  --bg: #70346e;
-  --text: #ffffff;
-
   display: flex;
   justify-content: center;
   align-items: center;
