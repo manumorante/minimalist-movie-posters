@@ -22,11 +22,11 @@ export default function Frame({ children, poster, activePosterID }) {
   }
 
   useEffect(() => {
-    if (isActive) {
-      setProperties(posterRef.current, poster.colors)
-    } else {
-      resetProperties(posterRef.current, poster.colors)
-    }
+    setProperties(posterRef.current, poster.colors)
+    // if (isActive) {
+    // } else {
+    //   resetProperties(posterRef.current, poster.colors)
+    // }
   }, [poster, isActive])
 
   return (
