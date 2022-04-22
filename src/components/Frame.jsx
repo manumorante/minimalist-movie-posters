@@ -6,27 +6,14 @@ export default function Frame({ children, poster, activePosterID }) {
   const [classID, setClassID] = useState(id)
   const isActive = id === activePosterID
 
-  function setProperties(el, attrs) {
-    for (var key in attrs) {
-      el.style.setProperty(`--${key}`, attrs[key])
-    }
-  }
-
-  function resetProperties(el, attrs) {
-    for (var key in attrs) {
-      el.style.setProperty(`--${key}`, '#444')
-    }
-
-    el.style.setProperty('--bg', '#222')
-    el.style.setProperty('--text', '#aaa')
-  }
-
   useEffect(() => {
+    function setProperties(el, attrs) {
+      for (var key in attrs) {
+        el.style.setProperty(`--${key}`, attrs[key])
+      }
+    }
+
     setProperties(posterRef.current, poster.colors)
-    // if (isActive) {
-    // } else {
-    //   resetProperties(posterRef.current, poster.colors)
-    // }
   }, [poster, isActive])
 
   return (
