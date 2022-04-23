@@ -3,19 +3,21 @@ import './css/index.css'
 import { usePosters, usePosterToggle } from './AppProvider'
 import { posterObserver } from './posterObserver'
 import PostersList from './components/PosterList'
-import Bye from './components/Bye'
+import Hello from './components/Hello'
 
 export default function App() {
   const [envStyles, setEnvStyles] = useState({})
-  const { activePoster } = usePosters()
+  const { posters, activePosition } = usePosters()
   const togglePoster = usePosterToggle()
 
   useEffect(() => {
+    // When there is no active position, we need to set the initial styles
+    const pos = activePosition < 0 ? 0 : activePosition
     setEnvStyles({
-      backgroundColor: activePoster.colors['wrap'],
-      color: activePoster.colors['text'],
+      backgroundColor: posters[pos].colors['wrap'],
+      color: posters[pos].colors['text'],
     })
-  }, [activePoster])
+  }, [activePosition])
 
   useEffect(() => {
     const posterDomElements = document.querySelectorAll('.Frame')
@@ -24,12 +26,12 @@ export default function App() {
 
   return (
     <div
-      className='App bg-neutral-200 transition-colors duration-1000 pb-[50vh] pt-10'
+      className='App bg-neutral-200 transition-colors duration-1000 pb-[30vh]'
       style={envStyles}>
+      <Hello />
       <div className='max-w-[500px] mx-auto p-10'>
         <PostersList />
       </div>
-      <Bye />
     </div>
   )
 }

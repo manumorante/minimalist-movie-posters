@@ -1,20 +1,6 @@
 import { lazy } from 'react'
-export const POSTERS = {
-  ForrestGump: {
-    id: 'ForrestGump',
-    title: 'Forrest Gump',
-    subtitle: '1994, Robert Zemeckis',
-    colors: { wrap: '#407e97', bg: '#77b1c9', text: '#ffffff' },
-    component: lazy(() => import('./components/posters/ForrestGump')),
-  },
-  HomeAlone: {
-    id: 'HomeAlone',
-    title: 'Home Alone',
-    subtitle: '1990, Chris Columbus',
-    colors: { wrap: '#1E5824', bg: '#8d1200', text: '#ffffff' },
-    component: lazy(() => import('./components/posters/HomeAlone')),
-  },
-  KillBill: {
+export const data = [
+  {
     id: 'KillBill',
     title: 'Kill Bill',
     subtitle: '2003, Quentin Tarantino',
@@ -26,28 +12,42 @@ export const POSTERS = {
     },
     component: lazy(() => import('./components/posters/KillBill')),
   },
-  StarWars: {
+  {
     id: 'StarWars',
     title: 'Star Wars',
     subtitle: '1977, George Lucas',
     colors: { wrap: '#000000', bg: '#222222', text: '#ffffff' },
     component: lazy(() => import('./components/posters/StarWars')),
   },
-  TheMatrix: {
+  {
     id: 'TheMatrix',
     title: 'The Matrix',
     subtitle: '1999, Wachowski Brothers',
     colors: { wrap: '#024412', bg: '#000000', text: '#32b050' },
     component: lazy(() => import('./components/posters/TheMatrix')),
   },
-  Titanic: {
+  {
+    id: 'ForrestGump',
+    title: 'Forrest Gump',
+    subtitle: '1994, Robert Zemeckis',
+    colors: { wrap: '#407e97', bg: '#77b1c9', text: '#ffffff' },
+    component: lazy(() => import('./components/posters/ForrestGump')),
+  },
+  {
+    id: 'HomeAlone',
+    title: 'Home Alone',
+    subtitle: '1990, Chris Columbus',
+    colors: { wrap: '#1E5824', bg: '#8d1200', text: '#ffffff' },
+    component: lazy(() => import('./components/posters/HomeAlone')),
+  },
+  {
     id: 'Titanic',
     title: 'Titanic',
     subtitle: '1997, James Cameron',
     colors: { wrap: '#151c29', bg: '#354463', text: '#ffffff' },
     component: lazy(() => import('./components/posters/Titanic')),
   },
-  Up: {
+  {
     id: 'Up',
     title: 'Up',
     subtitle: '2009, Pete Docter',
@@ -61,14 +61,14 @@ export const POSTERS = {
     },
     component: lazy(() => import('./components/posters/Up')),
   },
-  MonstersInc: {
+  {
     id: 'MonstersInc',
     title: 'Monsters, Inc',
     subtitle: '2002, Pete Docter',
     colors: { wrap: '#451a43', bg: '#70346e', text: '#ffffff' },
     component: lazy(() => import('./components/posters/MonstersInc')),
   },
-  TheTrumanShow: {
+  {
     id: 'TheTrumanShow',
     title: 'The Truman Show',
     subtitle: '1998, Peter Weir',
@@ -83,4 +83,4 @@ export const POSTERS = {
   //   colors: { wrap: '#000000', bg: '#555555', text: '#111111' },
   //   component: lazy(() => import('./components/posters/ASpaceOdyssey2001')),
   // },
-}
+]

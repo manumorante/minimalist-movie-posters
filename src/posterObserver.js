@@ -8,7 +8,7 @@ export function posterObserver(elements, callback) {
   const ob = new IntersectionObserver((entries) => {
     entries.forEach((el) => {
       if (el.isIntersecting) {
-        callback(el.target.dataset.posterId)
+        callback(el.target.dataset.posterPosition)
       }
     })
   }, options)
