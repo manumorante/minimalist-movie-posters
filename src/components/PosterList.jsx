@@ -7,17 +7,17 @@ import Frame from './Frame'
 export default function PosterList() {
   const { posters } = usePosters()
   const [components, setComponents] = useState([])
-  
+
   // TODO: tratar de llevar este state (y su gestion del domlist) a dentro del hook
   const [posterDOMList, setPosterDOMList] = useState(null)
   useObserver(posterDOMList)
-  
+
   let position = -1
 
   useEffect(() => {
     let componentsArray = []
     posters.map((poster) => {
-      const PosterComponent = lazy(() => import(`./posters/${poster.id}`))
+      const PosterComponent = lazy(() => import(`./posters/${poster.id}.jsx`))
       componentsArray.push(PosterComponent)
     })
     setComponents(componentsArray)
