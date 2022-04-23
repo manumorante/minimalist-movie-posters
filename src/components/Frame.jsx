@@ -25,7 +25,7 @@ export default function Frame({ children, position, poster }) {
   return (
     <div
       ref={posterRef}
-      className={`Frame ${id} ${isActiveClass}`}
+      className={`Frame GlossyFrame ${id} ${isActiveClass}`}
       data-poster-position={position}>
       <div className='titles'>
         {title && <div className='title'>{title}</div>}

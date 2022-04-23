@@ -1,0 +1,52 @@
+/* Frame
+Common layout/template for all posters */
+
+.Frame {
+  @apply relative
+    w-full
+    aspect-poster
+    duration-1000
+    rounded-md
+    overflow-hidden
+    transition-all;
+
+  * {
+    /* Define that all animated elements within
+    each poster will have a default transition. */
+    @apply transition-all;
+  }
+
+  &.default {
+    @apply opacity-50 z-10;
+  }
+
+  /* See a big scaled poster when active */
+  &.active {
+    @apply opacity-100 shadow-md scale-[1.12] z-20;
+  }
+
+  /* Default title and subtitle */
+  .titles {
+    @apply absolute
+      right-0
+      bottom-8
+      sm:bottom-12
+      left-0
+      text-center;
+  }
+
+  .title {
+    @apply text-xl
+    jl:text-2xl
+    sm:text-3xl
+    font-bold
+    leading-none
+    jl:leading-none
+    px-6;
+  }
+
+  .subtitle {
+    @apply text-base
+    font-normal;
+  }
+}

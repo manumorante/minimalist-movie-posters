@@ -7,7 +7,7 @@ import AppProvider from './AppProvider'
 ReactDOM.render(
   <React.StrictMode>
     <AppProvider>
-    <App />
+      <App />
     </AppProvider>
   </React.StrictMode>,
   document.getElementById('root')
