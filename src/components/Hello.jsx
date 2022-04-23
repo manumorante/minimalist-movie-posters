@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { usePosters } from '../AppProvider'
+import { usePosters } from '../context/AppProvider'
 
 export default function Hello() {
   const { activePosition } = usePosters()

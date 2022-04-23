@@ -1,5 +1,5 @@
 import React, { Suspense } from 'react'
-import { usePosters } from '../AppProvider'
+import { usePosters } from '../context/AppProvider'
 import Frame from './Frame'
 
 export default function PosterList() {

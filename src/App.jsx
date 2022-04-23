@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import './css/index.css'
-import { usePosters, usePosterToggle } from './AppProvider'
-import { posterObserver } from './posterObserver'
+import { usePosters, usePosterToggle } from './context/AppProvider'
+import { myObserver } from './utils/myObserver'
 import PostersList from './components/PosterList'
 import Hello from './components/Hello'
 
@@ -21,7 +21,7 @@ export default function App() {
 
   useEffect(() => {
     const posterDomElements = document.querySelectorAll('.Frame')
-    posterObserver(posterDomElements, togglePoster)
+    myObserver(posterDomElements, togglePoster)
   }, [])
 
   return (

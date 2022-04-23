@@ -1,5 +1,6 @@
 import React, { useState, createContext, useContext } from 'react'
-import { POSTERS } from './postersData'
+import { data } from '../../public/posters.js'
+import randomizeArray from '../utils/randomizeArray'
 
 const postersDataContext = createContext()
 const posterToggleContext = createContext()
@@ -13,6 +14,8 @@ export function usePosterToggle() {
 }
 
 export default function AppProvider({ children }) {
+  const POSTERS = randomizeArray(data)
+
   const initialPostersData = {
     posters: POSTERS,
     activePosition: -1,

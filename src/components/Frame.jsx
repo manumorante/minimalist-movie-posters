@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react'
-import { usePosters } from '../AppProvider'
+import { usePosters } from '../context/AppProvider'
 
 export default function Frame({ children, position, poster }) {
   const posterRef = useRef(null)
