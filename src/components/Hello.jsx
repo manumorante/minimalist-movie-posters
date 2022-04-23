@@ -49,7 +49,7 @@ export default function Hello() {
               d='M19 13l-7 7-7-7m14-8l-7 7-7-7'
             />
           </svg>
-          {ES ? <>Baja para ver</> : <>Scroll down</>}
+          {/* {ES ? <>Baja para ver</> : <>Scroll down</>} */}
         </div>
       </div>
     </div>
