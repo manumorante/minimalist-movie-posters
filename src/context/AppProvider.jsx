@@ -1,5 +1,5 @@
 import React, { useState, createContext, useContext } from 'react'
-import { data } from '../../public/posters.js'
+import { data } from '../../posters'
 import randomizeArray from '../utils/randomizeArray'
 const POSTERS = randomizeArray(data)
 
