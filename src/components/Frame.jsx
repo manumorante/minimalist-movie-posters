@@ -1,11 +1,13 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { usePosters } from '../context/AppProvider'
+import { locale } from '../utils/ES'
 
 export default function Frame({ children, position, poster }) {
   const posterRef = useRef(null)
   const { activePosition } = usePosters()
   const [isActiveClass, setIsActiveClass] = useState('default')
-  const { id, title, subtitle } = poster
+  const { id } = poster
+  const { title, subtitle } = poster[locale]
 
   useEffect(() => {
     function setProperties(el, attrs) {

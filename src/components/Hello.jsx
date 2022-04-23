@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from 'react'
 import { usePosters } from '../context/AppProvider'
+import { ES } from '../utils/ES'
 
 export default function Hello() {
   const { activePosition } = usePosters()
   const [arrowClass, setArrowClass] = useState('')
-  const userLang = navigator.language || navigator.userLanguage
-  const ES = userLang.includes('es')
 
   useEffect(() => {
     if (activePosition >= 0) {
