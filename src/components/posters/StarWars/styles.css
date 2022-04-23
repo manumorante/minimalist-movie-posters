@@ -32,11 +32,11 @@
     width: 100%;
     height: 100%;
     transform-style: preserve-3d;
-    transform: rotateY(45deg);
+    transform: rotateY(30deg);
   }
 
   &.active .death-ray {
-    animation: spin 10s infinite ease-in-out alternate;
+    animation: pointing 10s infinite ease-in-out alternate;
   }
 
   .death-ray::after {
@@ -50,9 +50,9 @@
     transform: translate3d(150%, 80%, 80px) rotateX(20deg);
   }
 
-  @keyframes spin {
+  @keyframes pointing {
     100% {
-      transform: rotateY(-45deg);
+      transform: rotateY(-20deg);
     }
   }
 }

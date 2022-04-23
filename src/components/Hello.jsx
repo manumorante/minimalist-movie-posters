@@ -16,10 +16,10 @@ export default function Hello() {
   }, [activePosition])
 
   return (
-    <div className='Hello md:max-w-[300px] h-[75vh] sm:h-auto flex justify-center items-center md:fixed md:top-10 md:left-0'>
+    <div className='Hello flex justify-center items-center h-[75vh] lg:max-w-[300px] lg:h-auto lg:fixed lg:top-10 lg:left-0'>
       <div className='flex flex-col items-center justify-between h-full '>
-        <div className='h-full p-8 md:p-12 flex items-center'>
-          <span className='text-4xl font-light md:text-2xl leading-snug'>
+        <div className='h-full p-8 md:p-24 lg:p-12 flex items-center'>
+          <span className='text-4xl font-light lg:text-2xl leading-snug'>
             {ES ? (
               <>
                 Carteles de cine <span className='font-bold'>minimalistas</span>{' '}
@@ -36,7 +36,7 @@ export default function Hello() {
 
         <a
           href='#posters'
-          className={`md:hidden flex flex-col rounded-full p-6 items-center transition-opacity duration-1000 ${arrowClass}`}>
+          className={`lg:hidden flex flex-col rounded-full p-6 items-center transition-opacity duration-1000 ${arrowClass}`}>
           <svg
             xmlns='http://www.w3.org/2000/svg'
             className='animate-bounce h-6 w-6'

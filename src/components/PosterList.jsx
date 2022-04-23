@@ -37,7 +37,7 @@ export default function PosterList() {
   return (
     <div
       id='posters'
-      className='PosterList md:max-w-lg xl:max-w-xl mx-auto flex flex-col gap-8 px-4 lg:py-6 xl:py-12 sm:gap-12 items-center'>
+      className='PosterList md:max-w-xl lg:max-w-lg xl:max-w-xl mx-auto flex flex-col gap-8 px-4 md:py-6 xl:py-12 sm:gap-12 items-center'>
       {posters.map((poster) => {
         position++
         const PosterComponent = components[position]
