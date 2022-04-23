@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react'
+import React, { Suspense, lazy } from 'react'
 import { usePosters } from '../context/AppProvider'
 import Frame from './Frame'
 
@@ -10,7 +10,7 @@ export default function PosterList() {
     <div className='PosterList flex flex-col gap-12 sm:gap-24 items-center md:mt-12'>
       {posters.map((poster) => {
         position++
-        const PosterComponent = poster.component
+        const PosterComponent = lazy(() => import(`./posters/${poster.id}`))
 
         return (
           <Suspense key={poster.id} fallback={null}>
