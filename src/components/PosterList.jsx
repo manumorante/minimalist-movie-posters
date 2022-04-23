@@ -17,7 +17,9 @@ export default function PosterList() {
   useEffect(() => {
     let componentsArray = []
     posters.map((poster) => {
-      const PosterComponent = lazy(() => import(`./posters/${poster.id}.jsx`))
+      const PosterComponent = lazy(() =>
+        import(`./posters/${poster.id}/index.jsx`)
+      )
       componentsArray.push(PosterComponent)
     })
     setComponents(componentsArray)
