@@ -7,10 +7,9 @@ import Hello from './components/Hello'
 export default function App() {
   const [envStyles, setEnvStyles] = useState({})
   const { posters, activePosition } = usePosters()
-  
 
   useEffect(() => {
-    // When there is no active position, we need to set the initial styles
+    // When there is no active poster we use the first one
     const pos = activePosition < 0 ? 0 : activePosition
     setEnvStyles({
       backgroundColor: posters[pos].colors['wrap'],
@@ -23,9 +22,7 @@ export default function App() {
       className='App bg-neutral-200 transition-colors duration-1000 pb-[30vh]'
       style={envStyles}>
       <Hello />
-      <div className='max-w-[500px] mx-auto p-10'>
-        <PostersList />
-      </div>
+      <PostersList />
     </div>
   )
 }

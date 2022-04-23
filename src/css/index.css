@@ -3,3 +3,7 @@
 
 @import './Frame.css';
 @import './GlossyFrame.css';
+
+html {
+  @apply scroll-smooth;
+}

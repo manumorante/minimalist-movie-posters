@@ -17,12 +17,12 @@ Common layout/template for all posters */
   }
 
   &.default {
-    @apply opacity-50 z-10;
+    @apply scale-[0.88] opacity-50 z-10;
   }
 
   /* See a big scaled poster when active */
   &.active {
-    @apply opacity-100 shadow-md scale-[1.12] z-20;
+    @apply scale-100 opacity-100 shadow-md z-20;
   }
 
   /* Default title and subtitle */
