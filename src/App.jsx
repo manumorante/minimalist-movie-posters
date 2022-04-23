@@ -1,14 +1,13 @@
 import React, { useState, useEffect } from 'react'
 import './css/index.css'
-import { usePosters, usePosterToggle } from './context/AppProvider'
-import { myObserver } from './utils/myObserver'
+import { usePosters } from './context/AppProvider'
 import PostersList from './components/PosterList'
 import Hello from './components/Hello'
 
 export default function App() {
   const [envStyles, setEnvStyles] = useState({})
   const { posters, activePosition } = usePosters()
-  const togglePoster = usePosterToggle()
+  
 
   useEffect(() => {
     // When there is no active position, we need to set the initial styles
@@ -18,11 +17,6 @@ export default function App() {
       color: posters[pos].colors['text'],
     })
   }, [activePosition])
-
-  useEffect(() => {
-    const posterDomElements = document.querySelectorAll('.Frame')
-    myObserver(posterDomElements, togglePoster)
-  }, [])
 
   return (
     <div
