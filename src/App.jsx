@@ -19,7 +19,7 @@ export default function App() {
 
   return (
     <div
-      className='App h-full bg-neutral-200 transition-colors duration-1000 pb-6'
+      className='App h-full bg-neutral-200 transition-colorsX duration-1000 pb-6'
       style={envStyles}>
       <Hello />
       <PostersList />
