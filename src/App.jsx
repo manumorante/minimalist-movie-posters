@@ -5,7 +5,7 @@ import PostersList from './components/PosterList'
 import Hello from './components/Hello'
 
 export default function App() {
-  const [envStyles, setEnvStyles] = useState({})
+  const [envStyles, setEnvStyles] = useState()
   const { posters, activePosition } = usePosters()
 
   useEffect(() => {
@@ -16,6 +16,8 @@ export default function App() {
       color: posters[pos].colors['text'],
     })
   }, [activePosition])
+
+  if (!envStyles) return null
 
   return (
     <div
