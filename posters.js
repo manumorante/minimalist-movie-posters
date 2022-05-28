@@ -119,16 +119,16 @@ export const data = [
     },
     colors: { wrap: '#2e3551', bg: '#53629b', text: '#cdcfd7' },
   },
-  {
-    id: 'ASpaceOdyssey2001',
-    es: {
-      title: '2001: Una odisea del espacio',
-      subtitle: '1968, Stanley Kubrick',
-    },
-    en: {
-      title: '2001: A Space Odyssey',
-      subtitle: '1968, Stanley Kubrick',
-    },
-    colors: { wrap: '#000000', bg: '#111', text: '#aaa' },
-  },
+  // {
+  //   id: 'ASpaceOdyssey2001',
+  //   es: {
+  //     title: '2001: Una odisea del espacio',
+  //     subtitle: '1968, Stanley Kubrick',
+  //   },
+  //   en: {
+  //     title: '2001: A Space Odyssey',
+  //     subtitle: '1968, Stanley Kubrick',
+  //   },
+  //   colors: { wrap: '#000000', bg: '#111', text: '#aaa' },
+  // },
 ]
