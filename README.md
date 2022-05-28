@@ -2,7 +2,7 @@
 
 # Minimalist Movie Posters
 
-[![](https://github.com/manumorante/minimalist-movie-posters/blob/main/minimalist-movie-posters.png?raw=true)](https://posters.manumorante.com)
+[![](public/minimalist-movie-posters.png)](https://posters.manumorante.com)
 
 https://posters.manumorante.com
 

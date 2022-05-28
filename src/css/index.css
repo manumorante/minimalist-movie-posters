@@ -5,5 +5,9 @@
 @import './GlossyFrame.css';
 
 html {
-  @apply scroll-smooth;
+  @apply scroll-smooth h-full;
+}
+
+body {
+  @apply h-full;
 }

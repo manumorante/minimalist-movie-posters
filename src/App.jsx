@@ -5,7 +5,7 @@ import PostersList from './components/PosterList'
 import Hello from './components/Hello'
 
 export default function App() {
-  const [envStyles, setEnvStyles] = useState({})
+  const [envStyles, setEnvStyles] = useState()
   const { posters, activePosition } = usePosters()
 
   useEffect(() => {
@@ -17,9 +17,11 @@ export default function App() {
     })
   }, [activePosition])
 
+  if (!envStyles) return null
+
   return (
     <div
-      className='App bg-neutral-200 transition-colors duration-1000 pb-[30vh]'
+      className='App h-full bg-neutral-200 transition-colorsX duration-1000 pb-6'
       style={envStyles}>
       <Hello />
       <PostersList />
