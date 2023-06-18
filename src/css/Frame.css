@@ -7,7 +7,6 @@ Common layout/template for all posters */
     aspect-poster
     duration-1000
     rounded-md
-    overflow-hidden
     transition-all;
 
   * {
