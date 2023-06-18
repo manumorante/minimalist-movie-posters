@@ -9,19 +9,18 @@ Common layout/template for all posters */
     rounded-md
     transition-all;
 
-  * {
-    /* Define that all animated elements within
-    each poster will have a default transition. */
-    @apply transition-all;
-  }
+  transition-duration: 300ms;
+  transition-property: transform, box-shadow;
+  transition-timing-function: ease-out;
+  transform: rotate3d(0);
 
   &.default {
-    @apply scale-[0.88] opacity-50 z-10;
+    @apply opacity-50 z-10;
   }
 
   /* See a big scaled poster when active */
   &.active {
-    @apply scale-100 opacity-100 shadow-md z-20;
+    @apply opacity-100 z-20;
   }
 
   /* Default title and subtitle */

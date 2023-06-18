@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react'
+import { useRotateToMouse } from '../utils/useCard3d'
 import { usePosters } from '../context/AppProvider'
 import { locale } from '../utils/ES'
 
@@ -8,6 +9,7 @@ export default function Frame({ children, position, poster }) {
   const [isActiveClass, setIsActiveClass] = useState('default')
   const { id } = poster
   const { title, subtitle } = poster[locale]
+  useRotateToMouse(posterRef)
 
   useEffect(() => {
     function setProperties(el, attrs) {
