@@ -3,6 +3,7 @@
 
   background-color: var(--bg);
   color: var(--text);
+  overflow: hidden;
 
   .blood {
     opacity: 0;
