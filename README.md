@@ -8,6 +8,9 @@ Taking static images created by various artists, this project transforms them in
 
 As you scroll, when a poster comes into focus at the center of the screen, **it captures all attention**, standing out with **more vivid colors** and triggering **an animation that progressively builds it**. Only when the animation completes does the **artist's full design reveal itself**.  
 
-Movie titles appear in **the language you know them by**, avoiding those moments when you wonder if they were always called that. *Jaws* will still be *Jaws*, *The Shining* will be *The Shining*, and *Home Alone* won’t suddenly become *Maman, j'ai raté l'avion!* (or vice versa).  
+Movie titles appear in the language you know them by, avoiding those moments when you wonder if they were always called that. 🦈 **Jaws** will still be *Tiburón*, **The Shining** will be *El Resplandor*, and **Home Alone** won’t suddenly become *Maman, j'ai raté l'avion!* (or vice versa).  
+
+> "You're gonna need a bigger boat."  
+> — Martin Brody, *Jaws*  
 
 🔗 **[Visit the project](https://posters.manumorante.com)**  
